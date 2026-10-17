@@ -1,0 +1,1 @@
+export function Unavailable({name}:{name:string}){return <div className="status"><strong>{name}: Not configured</strong><p>This module needs verified backend data, approved authorization and implementation. No fabricated operational records are displayed.</p></div>}
