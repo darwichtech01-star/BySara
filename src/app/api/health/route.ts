@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';export async function GET(){return NextResponse.json({service:'by-sara-greenfield',status:'foundation-only',database:'not-assessed',auth:'not-assessed',timestamp:new Date().toISOString()},{headers:{'cache-control':'no-store'}})}
