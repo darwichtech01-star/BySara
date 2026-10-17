@@ -1,0 +1,2 @@
+import {AdminLayout} from '@/components/AdminLayout';import {Unavailable} from '@/components/Unavailable';
+export default function Page(){return <AdminLayout><p className="eyebrow">BY SARA · ADMIN</p><h1 className="heading">Store Settings & Policies</h1><p className="muted">Business data and legal policies require approval before publishing.</p><Unavailable name="Store Settings & Policies" /></AdminLayout>}

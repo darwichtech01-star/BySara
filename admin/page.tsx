@@ -1,0 +1,2 @@
+import {AdminLayout} from '@/components/AdminLayout';import {Unavailable} from '@/components/Unavailable';
+export default function Page(){return <AdminLayout><p className="eyebrow">BY SARA · ADMIN</p><h1 className="heading">Operations Overview</h1><p className="muted">Actual operational metrics will appear only after audited APIs and admin access have been implemented.</p><Unavailable name="Operations Overview" /></AdminLayout>}

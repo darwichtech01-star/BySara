@@ -1,0 +1,2 @@
+import {StoreLayout} from '@/components/StoreLayout';import {EmptyState} from '@/components/store/Catalog';
+export default function Page(){return <StoreLayout><main className="shell page-body"><EmptyState icon="search" title="Explore individual beauty stories" body="Choose a published product from our catalog to see its detail page. No placeholder product is featured here." cta="Browse products" href="/shop"/></main></StoreLayout>}
