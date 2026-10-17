@@ -45,7 +45,17 @@ Read `docs/PHASE7_PREVIEW_SETUP.md`, `docs/PHASE7_OWNER_ACTIVATION.md` and `docs
 - `main` branch: `br-sweet-brook-b9pcekde`, preview branch: `br-tiny-water-b9p2xphd`; database `bysara_v2`.
 - Each branch: 10 application tables, 0 Auth users, 0 staff Owners, 0 Draft or Published products, 0 media rows and 0 audit events.
 - Preview Neon Auth trusted domains: none configured.
-- New GitHub repository `darwichtech01-star/by-sara-greenfield-2026`: not found.
+- GitHub repository `darwichtech01-star/BySara`: connected; all integration work is on `phase7-integration` and `main` remains unchanged.
 - New Vercel project `by-sara-greenfield-2026`: not found; earlier create attempt returned permission 403.
 
 These are infrastructure facts, not a claim of successful login or operating Preview.
+
+## GitHub CI integration update — 17 Oct 2026
+
+- Corrected Next.js App Router / `.github/workflows` repository paths on `phase7-integration`.
+- Aligned Next.js to `^16.0.0` because Neon Auth `0.6.0-beta` requires Next 16+ (npm peer dependency resolution).
+- Fixed Neon Auth GET/POST proxy route context typing for Next 16.
+- GitHub Actions quality gates now run for `phase7-integration`. Source checks (67 tests), TypeScript and production build passed in run https://github.com/darwichtech01-star/BySara/actions/runs/38989343486.
+- A Node 22 runner successfully generated and committed `package-lock.json` on the integration branch. The next quality gate is a clean **npm ci** run using that committed lockfile, followed by typecheck and build.
+- Vercel project creation `by-sara-greenfield-2026` still denied by Vercel team permissions (403). No new deployment or Owner account was created.
+- **Production remains NO-GO.** A successful build does not prove Neon Auth session behavior, storage uploads, or live Playwright E2E.
