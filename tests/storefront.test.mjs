@@ -1,0 +1,13 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {existsSync,readFileSync,readdirSync} from 'node:fs';
+import path from 'node:path';
+const read=(file)=>readFileSync(file,'utf8');
+const routes=['','shop','products/[slug]','search','wishlist','inquiry-bag','brands','brands/[slug]','categories','categories/[slug]','gifting','about','contact','help','policies/[slug]','account'];
+test('all 13 customer experience areas have executable route files',()=>{for(const route of routes)assert.ok(existsSync(path.join('src/app',route,'page.tsx')),route)});
+test('single shared shell, UI modules and locale state',()=>{assert.match(read('src/components/StoreLayout.tsx'),/StoreProvider/);assert.match(read('src/components/store/StoreContext.tsx'),/localStorage/);assert.match(read('src/styles/storefront.css'),/\[dir='rtl'\]/)});
+test('public catalog fails closed, no demo products',()=>{const route=read('src/app/api/catalog/route.ts');assert.match(route,/items:\[\]/);assert.doesNotMatch(route,/(?:demo|faker|sampleProduct)/i);assert.match(read('src/lib/storefront.ts'),/status==='ready'/)});
+test('wishlist and inquiry validate against currently published catalog',()=>{assert.match(read('src/app/wishlist/page.tsx'),/data\.status==='ready'/);assert.match(read('src/app/inquiry-bag/page.tsx'),/data\.status==='ready'/)});
+test('unverified whatsapp destination not sent to customers',()=>{assert.match(read('src/app/api/store-config/route.ts'),/whatsapp:null/);assert.match(read('src/app/inquiry-bag/page.tsx'),/const url=config\.whatsapp\?/)});
+test('neither storefront nor new pages point to the previous production domain',()=>{const dirs=['src/components','src/app'];const scan=(dir)=>{for(const x of readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,x.name);if(x.isDirectory())scan(file);else if(/\.(tsx?|css)$/.test(x.name))assert.doesNotMatch(read(file),/by-sara\.vercel\.app|dark-sea-58234313|br-autumn-poetry-bahfv1h7/,file)}};dirs.forEach(scan)});
+test('sign-in stays feature-gated until secure Neon Auth configuration',()=>{assert.match(read('src/components/store/AccountAuthForm.tsx'),/NEXT_PUBLIC_ENABLE_CUSTOMER_AUTH/);assert.match(read('src/components/store/AccountAuthForm.tsx'),/if\(!enabled\)/)});
