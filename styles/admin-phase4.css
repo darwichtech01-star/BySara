@@ -1,0 +1,22 @@
+/* BY SARA Greenfield — Levantine Velvet & Champagne admin control surfaces */
+.admin-stack{display:flex;flex-direction:column;gap:23px;padding:4px 0 50px;color:#261923}
+.admin-intro{padding-bottom:14px;border-bottom:1px solid #e5d4ce}
+.admin-intro h1{font:clamp(32px,4vw,53px)/1.15 'Playfair Display',Georgia,serif;color:#3B1024;margin:10px 0 12px}
+.admin-intro p{color:#74636A;line-height:1.8;font-size:13px;max-width:840px}
+.admin-card{background:#fff;border:1px solid #e8d6ca;padding:clamp(18px,3vw,32px);box-shadow:0 12px 32px #3b10240c;min-width:0}
+.admin-card h2{font:26px 'Playfair Display',Georgia,serif;color:#3b1024;margin:0 0 18px}
+.admin-card h2 small{font:11px 'Plus Jakarta Sans',sans-serif;color:#74636a;margin-inline-start:12px}
+.admin-card h3{color:#3b1024;font-size:14px;margin:23px 0 12px}
+.admin-two-col{display:grid;grid-template-columns:minmax(260px,1fr) minmax(280px,1.1fr);gap:21px;align-items:start}
+.admin-list{display:flex;flex-direction:column;gap:7px}
+.admin-record{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:7px;text-align:start;padding:13px 15px;border:1px solid #efdfd5;background:#faf7f4;width:100%;font:12px 'Plus Jakarta Sans',sans-serif;color:#261923}
+.admin-record strong{font-size:12px}.admin-record span{color:#74636a;font-size:11px}.admin-record em{font:11px 'Plus Jakarta Sans',sans-serif;color:#60293f;text-transform:uppercase}.admin-record.active{border-color:#3b1024;background:#f4e4e4}
+.admin-form{display:flex;flex-direction:column;gap:15px}.admin-form>label,.admin-form label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:650;color:#3b1024}
+.admin-form input,.admin-form select,.admin-form textarea{width:100%;min-height:42px;border:1px solid #e2cfc4;padding:11px 12px;border-radius:2px;background:#fff;color:#261923;font:13px 'Plus Jakarta Sans',sans-serif;min-width:0}
+.admin-form textarea{min-height:90px;resize:vertical}.admin-form input:focus-visible,.admin-form textarea:focus-visible,.admin-form select:focus-visible{outline:2px solid #d8b18f;outline-offset:2px}
+.admin-form .admin-checkbox{display:flex;flex-direction:row;align-items:flex-start;gap:10px;line-height:1.6}.admin-checkbox input{width:auto;min-height:0;margin-top:4px}
+.admin-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.admin-notice{border-inline-start:3px solid #d8b18f;background:#f5ebdf;padding:15px 18px;font-size:12px;color:#60293f;line-height:1.7}
+.admin-card hr{border:0;border-top:1px solid #eadbd3;margin:26px 0}
+.admin-form button:disabled,.admin-actions button:disabled{opacity:.42;cursor:not-allowed}
+[dir=rtl] .admin-record{text-align:right}
+@media(max-width:900px){.admin-two-col{grid-template-columns:1fr}.admin-stack{padding-inline:0}}

@@ -1,0 +1,39 @@
+name: BY SARA — Isolated Preview E2E (manual, read-only)
+on:
+  workflow_dispatch:
+    inputs:
+      preview_url:
+        description: 'Exact HTTPS deployment URL approved in Vercel for BY SARA greenfield'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  browser-smoke:
+    runs-on: ubuntu-latest
+    environment: by-sara-preview
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Exact hostname approval + read-only API smoke
+        env:
+          E2E_BASE_URL: ${{ inputs.preview_url }}
+          BY_SARA_APPROVED_PREVIEW_HOST: ${{ vars.BY_SARA_APPROVED_PREVIEW_HOST }}
+        run: node scripts/preview-readiness.mjs
+      - name: Install locked dependencies (fail if lockfile missing)
+        run: npm ci --no-audit --no-fund
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Run read-only desktop/mobile browser checks
+        env:
+          E2E_BASE_URL: ${{ inputs.preview_url }}
+          BY_SARA_APPROVED_PREVIEW_HOST: ${{ vars.BY_SARA_APPROVED_PREVIEW_HOST }}
+        run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: by-sara-phase7-playwright-failures
+          path: test-results/
+          retention-days: 3
