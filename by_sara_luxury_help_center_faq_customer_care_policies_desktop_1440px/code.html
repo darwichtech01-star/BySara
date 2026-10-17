@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#1c1c1a", "secondary-container": "#ffd5b1", "surface-dim": "#dcdad7", "error-container": "#ffdad6", "surface-tint": "#854e63", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "secondary": "#77583c", "on-secondary": "#ffffff", "surface-container-low": "#f6f3f0", "primary-fixed": "#ffd9e4", "primary": "#1a000b", "outline": "#837377", "background": "#fcf9f6", "on-primary-fixed-variant": "#6a374b", "on-primary-container": "#b3768d", "tertiary-fixed-dim": "#f5b8aa", "on-secondary-fixed-variant": "#5d4127", "surface-variant": "#e5e2df", "on-error-container": "#93000a", "on-error": "#ffffff", "tertiary-container": "#38160e", "on-surface": "#1c1c1a", "surface-bright": "#fcf9f6", "inverse-surface": "#31302f", "inverse-on-surface": "#f3f0ed", "tertiary": "#190200", "primary-fixed-dim": "#f9b3cc", "on-tertiary-fixed": "#32120a", "surface-container-lowest": "#ffffff", "surface-container": "#f0edea", "surface": "#fcf9f6", "primary-container": "#3b1024", "on-secondary-fixed": "#2c1702", "on-surface-variant": "#504347", "tertiary-fixed": "#ffdad2", "secondary-fixed-dim": "#e7bf9c", "error": "#ba1a1a", "outline-variant": "#d5c2c7", "on-tertiary-fixed-variant": "#663c31", "surface-container-highest": "#e5e2df", "on-tertiary-container": "#b07b6e", "secondary-fixed": "#ffdcbf", "surface-container-high": "#eae8e5", "on-primary-fixed": "#360b20", "on-secondary-container": "#795b3e", "inverse-primary": "#f9b3cc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-md": "1rem", "gutter": "1.5rem", "margin": "3rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-lg": [ "Playfair Display" ], "display-lg": [ "Playfair Display" ], "title-md": [ "Plus Jakarta Sans" ], "display-md": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "display-md-mobile": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ], "label-caps": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-lg": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "0.005em", "fontWeight": "600" } ], "display-md": [ "42px", { "lineHeight": "50px", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "display-md-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "700" } ], "display-lg-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-1.5 px-margin"><div class="max-w-[1380px] mx-auto flex items-center justify-between text-body-sm font-body-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-sm text-secondary-container">local_shipping</span><span class="">Bespoke Gifting &amp; Complimentary Beirut Atelier Delivery</span></div><div class="flex items-center gap-space-lg text-body-sm"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-sm text-secondary-container">call</span>WhatsApp: +961 1 980 000</span><button class="hover:text-secondary-container transition-colors" type="button">EN / عربي</button></div></div></div><div class="h-20 max-w-[1380px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><span class="font-headline-md text-headline-md tracking-wider text-primary">BY SARA</span><span class="font-label-caps text-label-caps text-secondary uppercase self-end mb-1">Beirut</span></a><div class="hidden xl:flex items-center relative w-64"><span class="material-symbols-outlined absolute left-3 text-outline text-lg">search</span><input class="w-full pl-9 pr-3 py-2 bg-surface-container-low rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search haute skincare, elixirs..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-md"><a class="relative p-2 rounded-full text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined text-xl">favorite</span><span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-primary-container text-on-primary text-[10px] flex items-center justify-center font-bold">5</span></a><a class="relative p-2 rounded-full text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="inquiry-bag" href="#"><span class="material-symbols-outlined text-xl">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary text-[10px] flex items-center justify-center font-bold">3</span></a></div><div class="h-6 w-[1px] bg-outline-variant hidden sm:block"></div><a class="flex items-center gap-space-sm pl-space-xs" data-path="concierge-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1XDV0XGuAy2Qmi9UbCRxiF89p6xCeQmyPKeW5AA20_jaSQGA0GfB7rAdwpLGeYVLaoShNJ29Swhf1NcoJwQ7QF6fQxKwWpjiZkWKwyiu11PduBRplhouugxHlYo8nDoPwIXlJpv6O02As0CScm9iRjtNDH3CKKkvnknp2i4ZrgJHbQO8T5mYoBrSVmyJbwpM9w10-BHg19L7DwoUu8iMtozNeUJFXeabfLmw_MbTyt2aVF5Usrn2eJOuyqy4EKxY9DEBZQKuZaCOA"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">Maison Sara</span><span class="font-label-caps text-label-caps text-secondary leading-tight mt-0.5">VIP Patron</span></div></a></div></div><div class="bg-surface-container-low/80 backdrop-blur-md"><div class="max-w-[1380px] mx-auto px-margin"><nav class="flex items-center justify-between overflow-x-auto py-2 gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="shop-all" href="#">Shop All</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="face-care" href="#">Face Care</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="sun-care" href="#">Sun Care</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="hair-products" href="#">Hair Products</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="body-products" href="#">Body Products</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="luxury-sets-offers-and-gifting" href="#">Sets &amp; Offers</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="fragrance" href="#">Fragrance</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="makeup-and-tools" href="#">Makeup &amp; Tools</a></nav></div></div></header><main class="w-full pt-36 bg-background"><div class="flex flex-col w-full">
+<!-- Interactive State Audit Controller Ribbon -->
+<aside aria-label="Interactive State Audit Controller" class="w-full bg-surface-container-high py-2.5 px-margin border-b border-outline-variant/30">
+<div class="max-w-[1380px] mx-auto flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto py-1 text-label-caps font-label-caps text-on-surface-variant">
+<span class="mr-2 text-primary font-bold tracking-widest text-[10px]">AUDIT PRESETS:</span>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary transition-all duration-200" id="btn-state-hub" type="button">
+          01 Help Center Hub (Active)
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all duration-200" id="btn-state-faq" type="button">
+          02 FAQ Accordion Expanded
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all duration-200" id="btn-state-workflow" type="button">
+          03 Help Article: Inquiry Bag Workflow
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all duration-200" id="btn-state-policy" type="button">
+          04 Customer Policy: Shipping &amp; Delivery
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all duration-200" id="btn-state-fallback" type="button">
+          05 Unpublished Policy Fallback
+        </button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all duration-200" id="btn-state-rtl" type="button">
+          06 مركز المساعدة (Arabic RTL)
+        </button>
+</div>
+<div class="inline-flex items-center gap-space-xs text-[11px] font-label-caps text-secondary uppercase bg-secondary-container/30 px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>Verified Client Care Desk · Non-Binding Illustrative Policy Framework</span>
+</div>
+</div>
+</aside>
+<!-- Help Center Main Shell -->
+<div class="w-full flex flex-col transition-all duration-300" id="care-center-wrapper">
+<!-- Breadcrumb & Help Center Hero Section -->
+<section class="relative w-full pt-space-xl pb-space-xl bg-gradient-to-b from-surface-container-low via-surface-container-low/60 to-background overflow-hidden">
+<!-- Ambient subtle background ornaments -->
+<div class="absolute -top-32 right-12 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-24 left-1/4 w-80 h-80 rounded-full bg-primary-container/5 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1380px] mx-auto px-margin relative z-10">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="mb-space-md">
+<ol class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<li>
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-sm">home</span>
+<span>Home</span>
+</a>
+</li>
+<li class="text-outline-variant">/</li>
+<li>
+<span class="text-primary font-bold">Help Center &amp; Care Policies</span>
+</li>
+</ol>
+</nav>
+<!-- Editorial Hero Title & Lead -->
+<div class="max-w-3xl space-y-space-sm mb-space-lg">
+<span class="inline-block font-label-caps text-label-caps text-secondary tracking-widest uppercase">
+            THE BY SARA CARE DESK · CLIENT CONCIERGE
+          </span>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight leading-none">
+            How can we <span class="italic font-normal text-secondary">help you?</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant pt-2 max-w-2xl leading-relaxed">
+            Find verified information regarding luxury Levantine botanical formulations, human-confirmed WhatsApp inquiry workflows, temperature-guarded batch handling, and client care charters.
+          </p>
+</div>
+<!-- Prominent Luxury Search Bar -->
+<div class="max-w-3xl bg-surface-container-lowest p-2 rounded-2xl shadow-[0_4px_30px_rgba(59,16,36,0.06)] transition-all focus-within:shadow-[0_8px_35px_rgba(59,16,36,0.12)]">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-secondary text-2xl">search</span>
+<input class="w-full pl-12 pr-28 py-3.5 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="help-search-input" placeholder="Search for answers (e.g. delivery, WhatsApp inquiry, ingredients, returns)..." type="text"/>
+<button class="absolute right-1.5 px-5 py-2.5 bg-primary-container text-on-primary font-label-md text-label-md rounded-xl hover:bg-primary transition-all" type="button">
+              Search
+            </button>
+</div>
+</div>
+<!-- Keyword Suggestions -->
+<div class="mt-space-sm flex flex-wrap items-center gap-x-2 gap-y-1.5 text-body-sm font-body-sm text-on-surface-variant max-w-3xl">
+<span class="text-secondary font-semibold text-xs tracking-wider uppercase font-label-caps">Popular:</span>
+<button class="hover:text-primary hover:underline transition-colors decoration-secondary underline-offset-4" type="button">WhatsApp Inquiry</button>
+<span class="text-outline-variant">·</span>
+<button class="hover:text-primary hover:underline transition-colors decoration-secondary underline-offset-4" type="button">Delivery Coverage</button>
+<span class="text-outline-variant">·</span>
+<button class="hover:text-primary hover:underline transition-colors decoration-secondary underline-offset-4" type="button">Payment Confirmation</button>
+<span class="text-outline-variant">·</span>
+<button class="hover:text-primary hover:underline transition-colors decoration-secondary underline-offset-4" type="button">Product pH &amp; Actives</button>
+<span class="text-outline-variant">·</span>
+<button class="hover:text-primary hover:underline transition-colors decoration-secondary underline-offset-4" type="button">Returns Policy</button>
+</div>
+</div>
+</section>
+<!-- Section 1: Help Topic Cards (6 Editorial Grid Tiles) -->
+<section class="w-full py-space-xl px-margin bg-background" id="section-topics">
+<div class="max-w-[1380px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-1">
+              EXPLORE THE HELP CENTER
+            </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+              Everything you need to know.
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            Direct, authentic answers curated by Sara’s botanical concierges to guarantee absolute transparency.
+          </p>
+</div>
+<!-- 6-Card Bento-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1 -->
+<article class="group bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">science</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">TOPIC 01</span>
+<span class="text-[11px] font-label-caps text-outline bg-surface-container px-2 py-0.5 rounded-full">5 Verified Guides</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-primary-container transition-colors">
+                  Product Questions
+                </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Formulation certificates, full INCI declarations, pH integrity ranges, and dark vault batch storage maintained at strict 18°C.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="text-body-sm font-label-md text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                Explore Topic <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+<span class="material-symbols-outlined text-outline-variant text-base">spa</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">chat</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">TOPIC 02</span>
+<span class="text-[11px] font-label-caps text-outline bg-surface-container px-2 py-0.5 rounded-full">4 Verified Guides</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-primary-container transition-colors">
+                  How Inquiries Work
+                </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                The bespoke Inquiry Bag protocol, WhatsApp dispatch review, manual inventory checks, and non-automated personal confirmation.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="text-body-sm font-label-md text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                Explore Topic <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+<span class="material-symbols-outlined text-outline-variant text-base">support_agent</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">payments</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">TOPIC 03</span>
+<span class="text-[11px] font-label-caps text-outline bg-surface-container px-2 py-0.5 rounded-full">3 Verified Guides</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-primary-container transition-colors">
+                  Payments &amp; Pricing
+                </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Confirmed transparent USD valuation, discreet Cash-on-Delivery at white-glove handoff, and zero upfront payment requirements.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="text-body-sm font-label-md text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                Explore Topic <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+<span class="material-symbols-outlined text-outline-variant text-base">receipt_long</span>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">TOPIC 04</span>
+<span class="text-[11px] font-label-caps text-outline bg-surface-container px-2 py-0.5 rounded-full">6 Verified Guides</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-primary-container transition-colors">
+                  Delivery Information
+                </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Same-day Beirut Atelier couriers, Mount Lebanon climate-guarded routes, temperature insulation wraps, and scheduled concierge handoffs.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="text-body-sm font-label-md text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                Explore Topic <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+<span class="material-symbols-outlined text-outline-variant text-base">nest_clock_farsight_analog</span>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">published_with_changes</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">TOPIC 05</span>
+<span class="text-[11px] font-label-caps text-outline bg-surface-container px-2 py-0.5 rounded-full">3 Verified Guides</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-primary-container transition-colors">
+                  Returns &amp; Exchanges
+                </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Sanitary sealing standards for haute cosmetic items, transit defect claims, and immediate WhatsApp photo review protocols.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="text-body-sm font-label-md text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                Explore Topic <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+<span class="material-symbols-outlined text-outline-variant text-base">verified_user</span>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">lock</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">TOPIC 06</span>
+<span class="text-[11px] font-label-caps text-outline bg-surface-container px-2 py-0.5 rounded-full">4 Verified Guides</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-primary-container transition-colors">
+                  Account &amp; Privacy
+                </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Client confidentiality charters, local browser-based Vanity Wishlist retention, and strictly discreet personal correspondence.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="text-body-sm font-label-md text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                Explore Topic <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+<span class="material-symbols-outlined text-outline-variant text-base">shield</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Section 2: Featured FAQ Accordion ("Questions, Answered") -->
+<section class="w-full py-space-xl px-margin bg-surface-container-low/70" id="section-faq">
+<div class="max-w-[1040px] mx-auto">
+<div class="text-center space-y-space-xs mb-space-xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">
+            QUESTIONS, ANSWERED
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            A little more clarity.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">
+            Honest protocols guiding your inquiries, orders, and consultations with BY SARA.
+          </p>
+</div>
+<!-- Accordions -->
+<div class="space-y-space-md" id="faq-accordion-group">
+<!-- Accordion Item 1 -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
+<button class="faq-trigger w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-title-md text-title-md text-primary font-headline-sm">
+                How does the Inquiry Bag work?
+              </span>
+<span class="faq-icon w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-lg">add</span>
+</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden text-body-md font-body-md text-on-surface-variant space-y-space-sm leading-relaxed border-t border-surface-container pt-space-sm">
+<p>
+                The <strong>Inquiry Bag</strong> is an editorial selection tray designed to prepare a structured summary of your desired formulations. When you finish adding items to your bag, clicking “Proceed to WhatsApp Review” transfers your itemized selection directly into a confidential dialogue with our Beirut Concierge.
+              </p>
+<p>
+                Crucially, <strong>opening WhatsApp does NOT charge or execute a financial purchase</strong>. It opens a direct, unpressured consultation where Sara and our licensed beauty advisors manually verify fresh vault batch quantities, expiration dates, skin compatibility, and convenient delivery times before you confirm.
+              </p>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
+<button class="faq-trigger w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-title-md text-title-md text-primary font-headline-sm">
+                Can I check whether a product is currently in stock?
+              </span>
+<span class="faq-icon w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-lg">add</span>
+</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden text-body-md font-body-md text-on-surface-variant space-y-space-sm leading-relaxed border-t border-surface-container pt-space-sm">
+<p>
+                Because our maison curates scarce French, Swiss, and Levantine botanical skincare batches, our physical vault inventory changes frequently throughout the day. When you submit your Inquiry Bag via WhatsApp, our team directly inspects the Downtown Beirut physical vault to confirm batch allocation in real time.
+              </p>
+<p>
+                If an elixir or treatment cream is temporarily exhausted, we will present immediate alternatives with identical therapeutic actives or reserve an allocation from the next verified shipment.
+              </p>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
+<button class="faq-trigger w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-title-md text-title-md text-primary font-headline-sm">
+                Does opening WhatsApp commit me to a purchase?
+              </span>
+<span class="faq-icon w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-lg">add</span>
+</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden text-body-md font-body-md text-on-surface-variant space-y-space-sm leading-relaxed border-t border-surface-container pt-space-sm">
+<div class="p-space-sm rounded-xl bg-secondary-container/20 flex items-start gap-3 text-secondary text-body-sm mb-2">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+<span><strong>No financial commitment:</strong> Opening WhatsApp simply drafts a structured message into your chat app. You retain 100% control to review, edit, or cancel.</span>
+</div>
+<p>
+                No payment information is collected on our web platform. You are free to ask questions about texture, compatibility with other products, or adjust quantities. Transactions are concluded exclusively after explicit agreement, with Cash on Delivery or confirmed transfer at handoff.
+              </p>
+</div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
+<button class="faq-trigger w-full px-space-lg py-space-md text-left flex items-center justify-between gap-space-md" type="button">
+<span class="font-title-md text-title-md text-primary font-headline-sm">
+                Where can I find ingredient and formulation information?
+              </span>
+<span class="faq-icon w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-lg">add</span>
+</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md hidden text-body-md font-body-md text-on-surface-variant space-y-space-sm leading-relaxed border-t border-surface-container pt-space-sm">
+<p>
+                Every product page features a dedicated <em>Clinical Formulation &amp; INCI Matrix</em> documenting primary actives, biological botanical extracts, and pH parameters. We guarantee complete transparency regarding preservative profiles, cold-pressed extraction methods, and allergy disclosures.
+              </p>
+<p>
+                Should you require specific medical patch-test documentation or compatibility insights with retinoids or AHA/BHA exfoliants, our resident skin therapists are available on the care desk chat.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Dual-Template Showcase (Reviewer Interactive Module) -->
+<section class="w-full py-space-xl px-margin bg-background" id="section-templates">
+<div class="max-w-[1380px] mx-auto">
+<!-- Interactive Template Switcher Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-lg mb-space-lg border-b border-surface-container">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">
+                ARCHITECTURE DEMONSTRATION &amp; REVIEW
+              </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+              Unified Help Architecture
+            </h2>
+</div>
+<div class="inline-flex p-1.5 rounded-2xl bg-surface-container self-start">
+<button class="px-5 py-2 rounded-xl text-body-sm font-label-md bg-surface-container-lowest text-primary shadow-sm transition-all" id="tab-toggle-article" type="button">
+              View A: Long-Form Help Article
+            </button>
+<button class="px-5 py-2 rounded-xl text-body-sm font-label-md text-on-surface-variant hover:text-on-surface transition-all" id="tab-toggle-policy" type="button">
+              View B: Official Customer Care Policy
+            </button>
+</div>
+</div>
+<!-- TEMPLATE VIEW A: Long-Form Help Article ("Inquiry Bag Workflow") -->
+<div class="transition-all duration-300" id="view-article-container">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Article Meta & Author Column (4 cols) -->
+<div class="lg:col-span-4 space-y-space-lg">
+<div class="bg-surface-container-low p-space-lg rounded-2xl space-y-space-md">
+<span class="inline-block font-label-caps text-[10px] text-secondary tracking-widest uppercase bg-secondary-container/40 px-2.5 py-1 rounded-full">
+                  STEP-BY-STEP PROTOCOL
+                </span>
+<h3 class="font-headline-md text-headline-md text-primary leading-snug">
+                  How the Inquiry Bag Works
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  A high-touch Lebanese concierge experience that removes sterile automated e-commerce checkouts in favor of genuine hospitality.
+                </p>
+<div class="pt-space-xs border-t border-outline-variant/30 text-body-sm font-body-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-outline">Reading Time</span>
+<span class="font-bold text-on-surface">3 min read</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Desk Lead</span>
+<span class="font-bold text-on-surface">Sara &amp; Senior Curators</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Last Revised</span>
+<span class="font-bold text-on-surface">Autumn 2024</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="w-full py-2.5 px-4 rounded-xl bg-primary text-on-primary text-body-sm font-label-md flex items-center justify-center gap-2 hover:bg-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>Test With Concierge Desk</span>
+</a>
+</div>
+</div>
+<!-- Editorial Image Card -->
+<div class="rounded-2xl overflow-hidden shadow-sm relative group">
+<img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up of luxurious amber glass skincare bottles and pipette droppers resting on warm beige travertine stone with natural morning sunlight casting soft botanical shadows in an elegant boutique atelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFAPoSAk00_5A-oqW2bNiSgYxp0wBBMXRAwZ7fvpFZm1kZBt6X_pCv7PYIm5LrsedsF9I7dmXjNKG2U15CNNpvTstVP2HVGuEPjO42qt1SHADoi1L6jhMoLc32a-nHlQgJDIp5N3sqwdOIW7ZQ81728tC13e328w2jLls7A_OqraCcptlV77jLgzuq1Xav0MMbTQiBag07KflWMUmXp6UwThpW5DaQYo9SUpC54HQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-space-md">
+<span class="text-on-primary font-body-sm text-xs italic">Every bottle verified by hand before Beirut atelier dispatch.</span>
+</div>
+</div>
+</div>
+<!-- Article Body Column (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-xl rounded-3xl shadow-sm space-y-space-lg">
+<div class="border-b border-surface-container pb-space-md">
+<span class="text-secondary font-label-caps text-xs tracking-widest uppercase">Workflow Architecture</span>
+<h4 class="font-headline-lg text-headline-lg text-primary mt-1">Four simple steps to your vanity</h4>
+</div>
+<!-- Step 1 -->
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-bold font-headline-sm shrink-0">
+                  1
+                </div>
+<div class="space-y-1">
+<h5 class="font-title-md text-title-md text-primary">Curate Your Desired Formulations</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Browse our Face Care, Sun Care, and Fragrance galleries. When a formulation fits your ritual, select “Add to Inquiry Bag”. Your selection persists across your session, allowing you to curate multiple elixirs without urgency.
+                  </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-bold font-headline-sm shrink-0">
+                  2
+                </div>
+<div class="space-y-1">
+<h5 class="font-title-md text-title-md text-primary">Review Quantities in Your Vanity Tray</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Open your Inquiry Bag from the top navigation. You can adjust bottle volumes, remove items, or include special requests (such as personalized gold calligraphy gift wrapping or fragile climate packing).
+                  </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-bold font-headline-sm shrink-0">
+                  3
+                </div>
+<div class="space-y-1">
+<h5 class="font-title-md text-title-md text-primary">Generate Your WhatsApp Consultation Note</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Tapping “Proceed to WhatsApp Review” formats your list into an organized, encrypted dispatch note. It automatically opens WhatsApp on your phone or desktop. <em>You have complete control to examine the message before tapping send.</em>
+</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold font-headline-sm shrink-0">
+                  4
+                </div>
+<div class="space-y-1">
+<h5 class="font-title-md text-title-md text-primary">Personal Confirmation &amp; White-Glove Dispatch</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Sara’s team immediately answers to confirm current vault inventory, recommend matching complimentary samples, and set your delivery window. No credit card is stored; settlement occurs peacefully in cash or approved transfer upon physical handoff.
+                  </p>
+</div>
+</div>
+<!-- Callout Note -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Why we don't use automated gateways:</strong> Luxury beauty requires fresh active botanical integrity. Automated carts fail to verify if high-potency Vitamin C or Peptides can withstand 48-hour delivery delays in summer. We personally safeguard every delivery schedule.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- TEMPLATE VIEW B: Official Customer Care Policy ("Shipping & Regional Dispatch") -->
+<div class="hidden transition-all duration-300" id="view-policy-container">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Sticky Policy Table of Contents Sidebar (4 cols) -->
+<div class="lg:col-span-4">
+<div class="sticky top-44 bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm space-y-space-md">
+<div class="border-b border-surface-container pb-space-sm">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">
+                    POLICY DIRECTORY
+                  </span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">
+                    Shipping &amp; Regional Dispatch
+                  </h4>
+</div>
+<!-- Navigation Links -->
+<nav class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<a class="block p-2 rounded-lg hover:bg-surface-container text-primary font-bold" href="#policy-overview">
+                    01. General Dispatch Overview
+                  </a>
+<a class="block p-2 rounded-lg hover:bg-surface-container hover:text-on-surface" href="#policy-coverage">
+                    02. Delivery Coverage &amp; Beirut Zones
+                  </a>
+<a class="block p-2 rounded-lg hover:bg-surface-container hover:text-on-surface" href="#policy-coldchain">
+                    03. Temperature-Preserved Cold-Chain
+                  </a>
+<a class="block p-2 rounded-lg hover:bg-surface-container hover:text-on-surface" href="#policy-handoff">
+                    04. Inspection Upon Handoff
+                  </a>
+<a class="block p-2 rounded-lg hover:bg-surface-container hover:text-on-surface" href="#policy-escalation">
+                    05. Care Desk Escalations
+                  </a>
+</nav>
+<!-- Metadata Pill Box -->
+<div class="pt-space-sm border-t border-surface-container text-[11px] font-label-caps text-outline space-y-1">
+<p>Document Version: 2.1 (Haute Care)</p>
+<p>Published: Autumn 2024</p>
+<p>Jurisdiction: Republic of Lebanon</p>
+</div>
+</div>
+</div>
+<!-- Policy Legal Body (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-xl rounded-3xl shadow-sm space-y-space-lg">
+<!-- Policy Metadata Header Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm">
+<div>
+<span class="text-outline block text-xs font-label-caps uppercase">Document Status</span>
+<span class="font-bold text-primary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Official Published Policy
+                  </span>
+</div>
+<div>
+<span class="text-outline block text-xs font-label-caps uppercase">Applicability</span>
+<span class="font-bold text-on-surface">Lebanon Atelier Deliveries</span>
+</div>
+<div>
+<span class="text-outline block text-xs font-label-caps uppercase">Care Lead</span>
+<span class="font-bold text-on-surface">Logistics Desk</span>
+</div>
+</div>
+<!-- Section 1 -->
+<div class="space-y-space-sm" id="policy-overview">
+<h3 class="font-headline-md text-headline-md text-primary">01. General Dispatch Overview</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  BY SARA operates a specialized luxury distribution network designed to protect active cosmetic compounds from thermal degradation, vibration, and prolonged warehousing. All dispatches originate directly from our climate-controlled Downtown Beirut Sanctuary.
+                </p>
+</div>
+<!-- Section 2 -->
+<div class="space-y-space-sm border-t border-surface-container pt-space-md" id="policy-coverage">
+<h3 class="font-headline-md text-headline-md text-primary">02. Delivery Coverage &amp; Beirut Zones</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  We distinguish our delivery services across three primary service tiers:
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-2">
+<div class="p-space-sm rounded-xl bg-surface-container">
+<h5 class="font-bold text-primary text-body-sm">Greater Beirut</h5>
+<p class="text-body-sm text-on-surface-variant mt-1">Same-day hand delivery on inquiries confirmed before 14:00. Complimentary for orders exceeding $100.</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container">
+<h5 class="font-bold text-primary text-body-sm">Mount Lebanon</h5>
+<p class="text-body-sm text-on-surface-variant mt-1">24 to 48 hour climate-shielded transit across Metn, Keserwan, and Chouf regions.</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container">
+<h5 class="font-bold text-primary text-body-sm">Regional Lebanon</h5>
+<p class="text-body-sm text-on-surface-variant mt-1">North, South, and Bekaa destinations scheduled via private courier on designated weekly runs.</p>
+</div>
+</div>
+</div>
+<!-- Section 3 -->
+<div class="space-y-space-sm border-t border-surface-container pt-space-md" id="policy-coldchain">
+<h3 class="font-headline-md text-headline-md text-primary">03. Temperature-Preserved Cold-Chain</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  During summer months (May through October), sensitive formulations containing unpreserved botanical oils, probiotic cultures, or unstable antioxidants are dispatched in thermal insulated pouches with reusable food-grade chill packs.
+                </p>
+</div>
+<!-- Section 4 -->
+<div class="space-y-space-sm border-t border-surface-container pt-space-md" id="policy-handoff">
+<h3 class="font-headline-md text-headline-md text-primary">04. Inspection Upon Handoff</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Patrons are invited and encouraged to inspect the tamper-evident wax seal and outer packaging upon delivery before completing cash handoff to our courier. If a bottle shows sign of transit damage or leakage, you may decline acceptance without any penalty or obligation.
+                </p>
+</div>
+<!-- Section 5 -->
+<div class="space-y-space-sm border-t border-surface-container pt-space-md" id="policy-escalation">
+<h3 class="font-headline-md text-headline-md text-primary">05. Care Desk Escalations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Should an inquiry experience unexpected delays due to transit weather or road logistics, our concierge contacts you proactively via WhatsApp with up-to-the-minute updates and revised arrival windows.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- TEMPLATE VIEW C: Unpublished Policy Fallback Display -->
+<div class="hidden transition-all duration-300" id="view-fallback-container">
+<div class="max-w-2xl mx-auto text-center bg-surface-container-lowest p-space-xl rounded-3xl shadow-sm space-y-space-md">
+<div class="w-16 h-16 rounded-full bg-secondary-container/40 text-secondary mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<span class="inline-block font-label-caps text-label-caps text-secondary uppercase tracking-widest">
+              POLICY VERIFICATION IN PROGRESS
+            </span>
+<h3 class="font-headline-lg text-headline-lg text-primary">
+              Policy Under Editorial Review
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto leading-relaxed">
+              Information regarding custom overseas allocations and bespoke cosmetic re-orders is currently being updated in consultation with our European lab partners.
+            </p>
+<div class="p-space-md bg-surface-container-low rounded-2xl text-body-sm font-body-sm text-left max-w-lg mx-auto">
+<p class="font-bold text-primary mb-1">Direct Assistance Available:</p>
+<p class="text-on-surface-variant">
+                For current protocols on international shipping or specialized diplomatic consignments, please contact Sara directly via the WhatsApp Concierge desk.
+              </p>
+</div>
+<div class="pt-2">
+<button class="px-6 py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors inline-flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>Inquire With Concierge (+961 81 898 280)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Concierge Assistance Velvet Banner -->
+<section class="w-full py-space-xl px-margin bg-primary text-on-primary relative overflow-hidden">
+<!-- Velvet glow ambient elements -->
+<div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-primary-container/40 blur-3xl pointer-events-none"></div>
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-secondary/30 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1380px] mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="space-y-space-sm max-w-2xl text-center lg:text-left">
+<span class="inline-block font-label-caps text-label-caps text-secondary-container tracking-widest uppercase">
+            NEED A LITTLE MORE HELP?
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">
+            We're here for your beauty questions.
+          </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed">
+            Our boutique concierge team reviews personalized skincare rituals, formulation layering, and same-day Beirut dispatch directly on WhatsApp.
+          </p>
+<div class="flex flex-wrap items-center justify-center lg:justify-start gap-space-md text-body-sm text-surface-variant pt-2">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-container text-base">schedule</span>
+<span>Available 10:00 — 20:00 Beirut Time</span>
+</span>
+<span>·</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-container text-base">support_agent</span>
+<span>Human Consultation Guaranteed</span>
+</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0 w-full lg:w-auto">
+<a class="w-full sm:w-auto px-6 py-4 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs hover:bg-on-primary-container hover:text-on-primary transition-all duration-300 shadow-md" href="https://wa.me/96181898280" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg text-secondary-container">chat</span>
+<span>Chat with BY SARA (+961 81 898 280)</span>
+</a>
+<button class="w-full sm:w-auto px-6 py-4 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container-low transition-all duration-300" type="button">
+            Contact Care Desk
+          </button>
+</div>
+</div>
+</section>
+<!-- Section 5: Unpublished Policy Safeguard Callout -->
+<section class="w-full py-space-md px-margin bg-surface-container-low">
+<div class="max-w-[1380px] mx-auto">
+<div class="p-space-md rounded-2xl bg-surface-container-lowest flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-primary font-title-md text-sm">Illustrative Client Care Framework</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Policies outlined on this portal are operational guidelines curated for discretion, transparency, and product integrity.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-body-sm font-label-md">
+<a class="text-secondary hover:text-primary transition-colors underline underline-offset-4" href="#">Read Authenticity Manifesto</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive State Controller Script -->
+<script>
+    (function initHelpCenterInteractive() {
+      // Elements
+      const btnHub = document.getElementById('btn-state-hub');
+      const btnFaq = document.getElementById('btn-state-faq');
+      const btnWorkflow = document.getElementById('btn-state-workflow');
+      const btnPolicy = document.getElementById('btn-state-policy');
+      const btnFallback = document.getElementById('btn-state-fallback');
+      const btnRtl = document.getElementById('btn-state-rtl');
+
+      const wrapper = document.getElementById('care-center-wrapper');
+      const tabArticle = document.getElementById('tab-toggle-article');
+      const tabPolicy = document.getElementById('tab-toggle-policy');
+
+      const viewArticle = document.getElementById('view-article-container');
+      const viewPolicy = document.getElementById('view-policy-container');
+      const viewFallback = document.getElementById('view-fallback-container');
+
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      const allControllerButtons = [btnHub, btnFaq, btnWorkflow, btnPolicy, btnFallback, btnRtl];
+
+      function setActiveButton(activeBtn) {
+        allControllerButtons.forEach(btn => {
+          if (btn === activeBtn) {
+            btn.className = 'px-3 py-1 rounded-full bg-primary text-on-primary transition-all duration-200';
+          } else {
+            btn.className = 'px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all duration-200';
+          }
+        });
+      }
+
+      function switchView(showView) {
+        viewArticle.classList.add('hidden');
+        viewPolicy.classList.add('hidden');
+        viewFallback.classList.add('hidden');
+
+        if (showView === 'article') {
+          viewArticle.classList.remove('hidden');
+          tabArticle.className = 'px-5 py-2 rounded-xl text-body-sm font-label-md bg-surface-container-lowest text-primary shadow-sm transition-all';
+          tabPolicy.className = 'px-5 py-2 rounded-xl text-body-sm font-label-md text-on-surface-variant hover:text-on-surface transition-all';
+        } else if (showView === 'policy') {
+          viewPolicy.classList.remove('hidden');
+          tabPolicy.className = 'px-5 py-2 rounded-xl text-body-sm font-label-md bg-surface-container-lowest text-primary shadow-sm transition-all';
+          tabArticle.className = 'px-5 py-2 rounded-xl text-body-sm font-label-md text-on-surface-variant hover:text-on-surface transition-all';
+        } else if (showView === 'fallback') {
+          viewFallback.classList.remove('hidden');
+          tabArticle.className = 'px-5 py-2 rounded-xl text-body-sm font-label-md text-on-surface-variant hover:text-on-surface transition-all';
+          tabPolicy.className = 'px-5 py-2 rounded-xl text-body-sm font-label-md text-on-surface-variant hover:text-on-surface transition-all';
+        }
+      }
+
+      // Accordion click handling
+      faqItems.forEach((item, index) => {
+        const trigger = item.querySelector('.faq-trigger');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon span');
+
+        trigger.addEventListener('click', () => {
+          const isExpanded = !content.classList.contains('hidden');
+          
+          // Collapse all others
+          faqItems.forEach(otherItem => {
+            otherItem.querySelector('.faq-content').classList.add('hidden');
+            otherItem.querySelector('.faq-icon span').textContent = 'add';
+          });
+
+          if (!isExpanded) {
+            content.classList.remove('hidden');
+            icon.textContent = 'remove';
+          }
+        });
+      });
+
+      // Internal tab toggles
+      tabArticle.addEventListener('click', () => {
+        switchView('article');
+      });
+
+      tabPolicy.addEventListener('click', () => {
+        switchView('policy');
+      });
+
+      // State 01: Hub (default)
+      btnHub.addEventListener('click', () => {
+        setActiveButton(btnHub);
+        wrapper.dir = 'ltr';
+        switchView('article');
+        // Reset accordions
+        faqItems.forEach(item => {
+          item.querySelector('.faq-content').classList.add('hidden');
+          item.querySelector('.faq-icon span').textContent = 'add';
+        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // State 02: FAQ Expanded
+      btnFaq.addEventListener('click', () => {
+        setActiveButton(btnFaq);
+        wrapper.dir = 'ltr';
+        // Open all FAQ accordions for inspection
+        faqItems.forEach(item => {
+          item.querySelector('.faq-content').classList.remove('hidden');
+          item.querySelector('.faq-icon span').textContent = 'remove';
+        });
+        const faqSection = document.getElementById('section-faq');
+        faqSection.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // State 03: Help Article (Workflow)
+      btnWorkflow.addEventListener('click', () => {
+        setActiveButton(btnWorkflow);
+        wrapper.dir = 'ltr';
+        switchView('article');
+        const templatesSection = document.getElementById('section-templates');
+        templatesSection.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // State 04: Customer Policy (Shipping)
+      btnPolicy.addEventListener('click', () => {
+        setActiveButton(btnPolicy);
+        wrapper.dir = 'ltr';
+        switchView('policy');
+        const templatesSection = document.getElementById('section-templates');
+        templatesSection.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // State 05: Fallback View
+      btnFallback.addEventListener('click', () => {
+        setActiveButton(btnFallback);
+        wrapper.dir = 'ltr';
+        switchView('fallback');
+        const templatesSection = document.getElementById('section-templates');
+        templatesSection.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // State 06: Arabic RTL Mode
+      btnRtl.addEventListener('click', () => {
+        setActiveButton(btnRtl);
+        if (wrapper.dir === 'rtl') {
+          wrapper.dir = 'ltr';
+          btnRtl.textContent = '06 مركز المساعدة (Arabic RTL)';
+        } else {
+          wrapper.dir = 'rtl';
+          btnRtl.textContent = '06 LTR English (Return)';
+        }
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg"><div class="max-w-[1380px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-wider text-primary">BY SARA</span><span class="font-label-caps text-label-caps text-secondary uppercase self-end mb-1">Beirut</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">An exquisite synthesis of Levantine botanical opulence, clinical dermatological science, and bespoke beauty rituals.</p><div class="pt-space-sm"><span class="inline-flex items-center gap-space-xs font-label-caps text-label-caps text-secondary px-3 py-1 rounded-full bg-secondary-container/40"><span class="material-symbols-outlined text-sm">verified</span>Maison Provenance Certified</span></div></div><div class="space-y-space-sm"><h4 class="font-title-md text-title-md text-primary font-headline-sm">Flagship Ateliers</h4><div class="text-body-md font-body-md text-on-surface-variant space-y-space-xs"><p class="font-bold text-on-surface">Downtown Beirut Sanctuary</p><p class="">Foch Avenue, Quartier Des Arts</p><p class="">Beirut, Lebanon</p><p class="text-body-sm text-secondary pt-1">Daily Consultations: 10:00 — 20:00</p></div><div class="text-body-md font-body-md text-on-surface-variant space-y-space-xs pt-space-xs"><p class="font-bold text-on-surface">Verdun Beauty Lounge</p><p class="">Dunes Center, Level 2</p></div></div><div class="space-y-space-sm"><h4 class="font-title-md text-title-md text-primary font-headline-sm">Haute Concierge</h4><ul class="space-y-space-xs text-body-md font-body-md text-on-surface-variant"><li class=""><a class="inline-flex items-center gap-space-xs text-primary font-bold hover:text-on-primary-container transition-colors" data-path="whatsapp-concierge" href="#"><span class="material-symbols-outlined text-base">chat</span>WhatsApp Direct Desk</a></li><li class=""><span class="text-body-sm block">Instant Gifting Advice: +961 70 000 000</span></li><li class=""><a class="hover:text-on-surface transition-colors block pt-1" data-path="bespoke-consultations" href="#">Bespoke Skin Consultations</a></li><li class=""><a class="hover:text-on-surface transition-colors block" data-path="shipping-and-hand-delivery" href="#">White-Glove Hand Delivery</a></li><li class=""><a class="hover:text-on-surface transition-colors block" data-path="corporate-gifting" href="#">Corporate &amp; VIP Gifting Suites</a></li></ul></div><div class="space-y-space-md"><h4 class="font-title-md text-title-md text-primary font-headline-sm">The Gazette Privée</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Receive discreet seasonal invitations, bespoke gift curations, and dermatological breakthroughs.</p><div class="flex flex-col gap-space-xs"><div class="flex"><input class="w-full px-3 py-2 bg-surface-container-lowest rounded-l-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Enter your correspondence email..." type="email"/><button class="px-4 py-2 bg-primary text-on-primary font-label-md text-label-md rounded-r-lg hover:bg-primary-container hover:text-on-primary-container transition-colors" type="button">Join</button></div><span class="font-label-caps text-[10px] text-outline">Discreet privilege. Never unsolicited dispatch.</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-on-surface-variant"><div class="flex items-center gap-space-lg"><p class="">© 2024 BY SARA Haute Parfumerie &amp; Skincare. All rights reserved.</p></div><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="privacy-charter" href="#">Privacy Charter</a><a class="hover:text-on-surface transition-colors" data-path="client-terms" href="#">Client Terms</a><a class="hover:text-on-surface transition-colors" data-path="authenticity-manifesto" href="#">Authenticity Manifesto</a></div></div></div></footer>
+</body></html>

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#f9b3cc", "on-error-container": "#93000a", "primary-container": "#3b1024", "on-surface": "#1c1c1a", "on-secondary-container": "#795b3e", "on-tertiary-fixed-variant": "#663c31", "inverse-surface": "#31302f", "secondary-fixed-dim": "#e7bf9c", "surface-container-low": "#f6f3f0", "surface-bright": "#fcf9f6", "tertiary-fixed": "#ffdad2", "tertiary-fixed-dim": "#f5b8aa", "primary": "#1a000b", "secondary-fixed": "#ffdcbf", "on-secondary-fixed-variant": "#5d4127", "on-primary-fixed": "#360b20", "on-tertiary-container": "#b07b6e", "outline": "#837377", "on-primary-fixed-variant": "#6a374b", "on-surface-variant": "#504347", "surface-container-highest": "#e5e2df", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "inverse-primary": "#f9b3cc", "error": "#ba1a1a", "surface-container": "#f0edea", "tertiary": "#190200", "surface-dim": "#dcdad7", "surface": "#fcf9f6", "on-error": "#ffffff", "outline-variant": "#d5c2c7", "on-tertiary-fixed": "#32120a", "secondary-container": "#ffd5b1", "inverse-on-surface": "#f3f0ed", "on-primary-container": "#b3768d", "surface-tint": "#854e63", "on-secondary": "#ffffff", "on-secondary-fixed": "#2c1702", "primary-fixed": "#ffd9e4", "error-container": "#ffdad6", "tertiary-container": "#38160e", "surface-container-lowest": "#ffffff", "surface-container-high": "#eae8e5", "secondary": "#77583c", "surface-variant": "#e5e2df", "on-background": "#1c1c1a", "background": "#fcf9f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-mobile": "1.25rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "3rem" }, fontFamily: { "title-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"], "headline-lg": ["Playfair Display"], "display-md": ["Playfair Display"], "label-caps": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "display-md-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"] }, fontSize: { "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0.005em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "600" }], "display-md": ["42px", { "lineHeight": "50px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-md-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-primary-container z-50 flex flex-col justify-between overflow-y-auto shadow-[0_20px_40px_-8px_rgba(39,13,26,0.32)]"><div class="p-space-lg"><div class="flex items-center gap-space-sm mb-space-xs"><div class="w-9 h-9 rounded-lg bg-tertiary-container flex items-center justify-center"><span class="font-headline-sm text-headline-sm text-secondary-fixed">S</span></div><div><div class="font-headline-sm text-headline-sm text-surface tracking-wider uppercase leading-none">BY SARA</div><div class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase">MAISON DE BEAUTÉ</div></div></div><div class="mt-space-sm mb-space-lg"><span class="inline-block px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase">OPERATIONS HUB</span></div><nav class="flex flex-col gap-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-bold rounded-lg shadow-sm"><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-on-primary-container uppercase px-space-sm mb-1">OVERVIEW</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="activity" href="#"><span class="material-symbols-outlined text-[18px]">timeline</span><span>Activity</span></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-on-primary-container uppercase px-space-sm mb-1">CATALOG &amp; MERCHANDISING</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="products" href="#"><span class="material-symbols-outlined text-[18px]">spa</span><span>Products</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="variants" href="#"><span class="material-symbols-outlined text-[18px]">palette</span><span>Variants</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="brands" href="#"><span class="material-symbols-outlined text-[18px]">workspace_premium</span><span>Brands</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="categories" href="#"><span class="material-symbols-outlined text-[18px]">category</span><span>Categories</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="collections" href="#"><span class="material-symbols-outlined text-[18px]">auto_awesome_motion</span><span>Collections</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="inventory" href="#"><span class="material-symbols-outlined text-[18px]">inventory_2</span><span>Inventory</span></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-on-primary-container uppercase px-space-sm mb-1">EDITORIAL &amp; STUDIO</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="media-manager" href="#"><span class="material-symbols-outlined text-[18px]">perm_media</span><span>Media Manager</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="publication-review" href="#"><span class="material-symbols-outlined text-[18px]">rate_review</span><span>Publication Review</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="inquiries" href="#"><span class="material-symbols-outlined text-[18px]">chat_bubble</span><span>Inquiries</span></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-on-primary-container uppercase px-space-sm mb-1">GOVERNANCE &amp; SYSTEM</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="production-readiness" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span>Production Readiness</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="team-and-permissions" href="#"><span class="material-symbols-outlined text-[18px]">manage_accounts</span><span>Team &amp; Permissions</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="audit-logs" href="#"><span class="material-symbols-outlined text-[18px]">history</span><span>Audit Logs</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-surface-container-high hover:bg-tertiary-container hover:text-surface font-body-sm text-body-sm transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Settings</span></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-on-primary-container uppercase px-space-sm mb-1">POST-LAUNCH &amp; HANDOVER</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg bg-secondary-container text-on-secondary-container font-body-sm text-body-sm font-semibold transition-all" data-path="operations-and-handover" href="#"><span class="material-symbols-outlined text-[18px]">task_alt</span><span>Operations &amp; Handover</span></a></div></nav></div><div class="p-space-lg bg-tertiary-container flex flex-col gap-space-sm"><a class="flex items-center justify-between text-secondary-fixed-dim hover:text-secondary-fixed font-body-sm text-body-sm transition-colors" data-path="storefront" href="#"><span>View Storefront (PROD)</span><span class="material-symbols-outlined text-[16px]">open_in_new</span></a><div class="p-space-sm rounded-lg bg-primary-container flex items-start gap-space-xs"><span class="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">support_agent</span><div><div class="font-label-caps text-label-caps text-secondary-fixed uppercase">HAUTE CONCIERGE</div><div class="font-body-sm text-body-sm text-surface-dim leading-snug">Sara VIP Operations is online &amp; synced</div></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(59,16,36,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant truncate"><span class="text-secondary">OPERATIONS HUB</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span>RELIABILITY &amp; TRANSITION</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">POST-LAUNCH OPERATIONS &amp; HANDOVER</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container font-label-caps text-label-caps text-secondary"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span>PROD LIVE · RC-2026.10 (Build 20261015.4) · Vercel Edge + Neon DB</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="w-56 pl-9 pr-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface focus:shadow-[0_0_0_1px_#77583c]" placeholder="Search commands or SKUs (⌘K)" type="text"/></div><div class="flex items-center p-0.5 rounded-lg bg-surface-container"><button class="px-space-sm py-1 rounded-md bg-surface text-on-surface font-label-caps text-label-caps shadow-sm" type="button">Owner</button><button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors" type="button">Admin</button><button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors" type="button">Staff</button></div><button class="relative p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-48px)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Canvas Container -->
+<div class="relative w-full overflow-hidden px-space-lg py-space-xl flex flex-col gap-space-xl">
+<!-- Ambient Rose-Gold Glow Accents -->
+<div class="absolute -top-40 right-10 w-[580px] h-[580px] rounded-full bg-secondary-container/20 blur-[130px] pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 -left-32 w-[460px] h-[460px] rounded-full bg-primary-fixed/25 blur-[120px] pointer-events-none -z-10"></div>
+<!-- 1. Operational Header & Context Bar -->
+<section class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg pb-space-lg">
+<div class="flex flex-col max-w-4xl min-w-0">
+<div class="flex items-center gap-space-xs mb-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-primary-container text-secondary-fixed font-label-caps text-label-caps shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping"></span>
+            POST-LAUNCH OPERATIONS &amp; TRANSITION GOVERNANCE
+          </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">·</span>
+<span class="font-label-caps text-label-caps tracking-wider text-secondary font-bold">REL-2026.10-PROD</span>
+<span class="font-label-caps text-label-caps text-outline-variant">·</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">BEIRUT ATELIER (UTC+3)</span>
+</div>
+<h1 class="font-display-md text-display-md text-primary font-normal tracking-tight leading-tight mb-space-xs">
+          Beautifully built. <span class="italic font-light text-secondary">Reliably managed.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          Real-time production health, technical issue triage, scheduled maintenance windows, verified runbooks, and formal deliverables handover for the Maison de Beauté digital flagships.
+        </p>
+</div>
+<!-- Action Group -->
+<div class="flex items-center gap-space-sm shrink-0 flex-wrap">
+<button class="group flex items-center gap-space-xs px-space-md py-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all duration-200" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:scale-110 transition-transform">download</span>
+<span>Export Handover Dossier (PDF/JSON)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-3 rounded-xl bg-primary-container hover:bg-primary text-surface font-label-md text-label-md shadow-[0_4px_20px_rgba(59,16,36,0.24)] hover:shadow-[0_6px_26px_rgba(59,16,36,0.38)] transition-all duration-200" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">add_circle</span>
+<span>Log Technical Case</span>
+</button>
+</div>
+</section>
+<!-- 2. Interactive State & Module Ribbon -->
+<section class="w-full bg-surface-container-lowest p-1.5 rounded-2xl shadow-[0_4px_24px_-4px_rgba(59,16,36,0.05)] overflow-x-auto">
+<div class="flex items-center gap-1.5 min-w-max">
+<!-- Tab 01 (Active) -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-primary-container text-surface shadow-sm font-label-md text-label-md transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="text-secondary-fixed-dim font-bold">01</span>
+<span>Operations &amp; Live Status</span>
+</button>
+<!-- Tab 02 -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-xl hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+<span class="text-outline font-bold">02</span>
+<span>Technical Support Desk</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">3 Active</span>
+</button>
+<!-- Tab 03 -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-xl hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+<span class="text-outline font-bold">03</span>
+<span>Incidents &amp; Recovery</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps">0 Outages</span>
+</button>
+<!-- Tab 04 -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-xl hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+<span class="text-outline font-bold">04</span>
+<span>Maintenance &amp; Change Control</span>
+</button>
+<!-- Tab 05 -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-xl hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+<span class="text-outline font-bold">05</span>
+<span>Knowledge Runbooks &amp; SOPs</span>
+</button>
+<!-- Tab 06 -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-xl hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+<span class="text-outline font-bold">06</span>
+<span>Handover Deliverables Matrix</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps font-bold">15/15</span>
+</button>
+<!-- Tab 07 Arabic Switcher -->
+<button class="ml-auto flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">translate</span>
+<span class="font-['IBM_Plex_Sans_Arabic',sans-serif] text-[13px] font-semibold text-secondary" dir="rtl">تسليم المشروع والدعم الفني</span>
+</button>
+</div>
+</section>
+<!-- 3. Operations KPI Grid (6 high-density cards) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6 gap-space-md">
+<!-- KPI 1 -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_24px_rgba(59,16,36,0.04)] flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(59,16,36,0.08)] transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Production Release</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+            LIVE
+          </span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary mb-1">v4.25-PROD</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Build #8f4a21d (Vercel Edge)</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Neon DB v16 Synced</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">cloud_done</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_24px_rgba(59,16,36,0.04)] flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(59,16,36,0.08)] transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Measured Health</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">speed</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary mb-1">99.98% <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ 30d</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Beirut edge-bey1 POP</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>14ms Warm CDN Cache</span>
+<span class="text-secondary font-semibold font-label-caps text-label-caps">NOMINAL</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_24px_rgba(59,16,36,0.04)] flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(59,16,36,0.08)] transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Technical Support</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">3 QUEUED</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary mb-1">03 Open Cases</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">0 Critical · 1 High · 2 Low</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Next SLA: 45 min</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">support</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_24px_rgba(59,16,36,0.04)] flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(59,16,36,0.08)] transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Active Incidents</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary mb-1">00 Active</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">All 24 Micro-services UP</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>RLS Non-demotion Active</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_24px_rgba(59,16,36,0.04)] flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(59,16,36,0.08)] transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Scheduled Window</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary mb-1">Oct 22, 02:00</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Beirut Time (Zero-downtime)</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Read Replica Index Tuning</span>
+<span class="text-secondary font-semibold font-label-caps text-label-caps">PLAN: P2</span>
+</div>
+</div>
+<!-- KPI 6 (Highlighted Handover) -->
+<div class="relative overflow-hidden bg-primary-container text-surface rounded-2xl p-space-md shadow-[0_8px_30px_rgba(59,16,36,0.18)] flex flex-col justify-between group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed">Handover Status</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">READY</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-surface mb-1">15 / 15 Items</div>
+<div class="font-body-sm text-body-sm text-secondary-fixed-dim">All artifacts compiled</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-surface-dim font-body-sm text-body-sm">
+<span>Awaiting Owner FIDO2</span>
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">key</span>
+</div>
+</div>
+</section>
+<!-- 4. Main Operational Two-Column Workspace (Split ~62% Left / 38% Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (Primary Workspaces ~62% -> 7 Cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- SECTION A: Master Handover Deliverables Matrix -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_6px_30px_rgba(59,16,36,0.04)] flex flex-col gap-space-md">
+<!-- Matrix Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold">SECTION A · OFFICIAL CUSTODY</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">15 OF 15 COMPLIANT</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Master Deliverables Handover Matrix</h2>
+</div>
+<!-- Quick Table Controls -->
+<div class="flex items-center gap-space-xs">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-[16px] text-on-surface-variant">filter_list</span>
+<select class="pl-8 pr-6 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none appearance-none cursor-pointer">
+<option>All 8 Primary Categories</option>
+<option>Ready for Acceptance</option>
+<option>Hardened &amp; Cryptographically Signed</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-[14px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" title="Export Artifact Table" type="button">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+</button>
+</div>
+</div>
+<!-- Structured Artifacts Matrix Table -->
+<div class="overflow-x-auto rounded-2xl bg-surface-container-low/50">
+<table class="w-full text-left font-body-md text-body-md min-w-[700px]">
+<thead class="bg-surface-container text-on-surface-variant font-label-caps text-label-caps uppercase">
+<tr>
+<th class="py-3 px-space-md">Item &amp; Architecture Scope</th>
+<th class="py-3 px-space-md">Artifact / Hash ID</th>
+<th class="py-3 px-space-md">Custodian Lead</th>
+<th class="py-3 px-space-md text-right">Acceptance Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 01 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-primary">01. Source Code Repository &amp; CI/CD</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Next.js 14 App Router, TypeScript strict, Tailwind tokens</div>
+</td>
+<td class="py-3.5 px-space-md">
+<code class="px-2 py-0.5 rounded bg-surface-container text-secondary font-mono text-[11px]">git#8f4a21d</code>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface">Lead Architect</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                      VERIFIED
+                    </span>
+</td>
+</tr>
+<!-- Row 02 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-primary">02. PostgreSQL Neon v16 Architecture</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">18 catalog tables, cascaded FKs, PITR retention 30d</div>
+</td>
+<td class="py-3.5 px-space-md">
+<code class="px-2 py-0.5 rounded bg-surface-container text-secondary font-mono text-[11px]">pg-schema-v4.25</code>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface">Neon DB Eng</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">database</span>
+                      MIGRATED
+                    </span>
+</td>
+</tr>
+<!-- Row 03 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-primary">03. Authentication &amp; RBAC Hierarchy</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">PostgreSQL RLS with protected non-demotable Owner root</div>
+</td>
+<td class="py-3.5 px-space-md">
+<code class="px-2 py-0.5 rounded bg-surface-container text-secondary font-mono text-[11px]">rls-pol-fido2</code>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface">Security Architect</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                      HARDENED
+                    </span>
+</td>
+</tr>
+<!-- Row 04 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-primary">04. Media Storage &amp; Edge CDN Buckets</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">S3-compatible multi-AZ asset bucket, SHA-256 hashes</div>
+</td>
+<td class="py-3.5 px-space-md">
+<code class="px-2 py-0.5 rounded bg-surface-container text-secondary font-mono text-[11px]">cdn-s3-prod-az</code>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface">Ops Eng</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                      100% RESOLVED
+                    </span>
+</td>
+</tr>
+<!-- Row 05 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-primary">05. WhatsApp VIP Concierge Deep-Link</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Mode A verified relay (+961 70 889 214) with SKU metadata</div>
+</td>
+<td class="py-3.5 px-space-md">
+<code class="px-2 py-0.5 rounded bg-surface-container text-secondary font-mono text-[11px]">wa-relay-modeA</code>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface">CRM Ops</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span>
+                      APPROVED
+                    </span>
+</td>
+</tr>
+<!-- Row 06 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-primary">06. Bilingual Storefront &amp; Law 81 Audit</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">24 pages with verified Arabic RTL &amp; consumer privacy notice</div>
+</td>
+<td class="py-3.5 px-space-md">
+<code class="px-2 py-0.5 rounded bg-surface-container text-secondary font-mono text-[11px]">law81-audit-signed</code>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface">Sara K. (Owner)</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+                      VERIFIED
+                    </span>
+</td>
+</tr>
+<!-- Row 07 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-primary">07. Administrative Runbooks &amp; SOP Suite</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">14 step-by-step guides (catalog CRUD, stock audit, rollback)</div>
+</td>
+<td class="py-3.5 px-space-md">
+<code class="px-2 py-0.5 rounded bg-surface-container text-secondary font-mono text-[11px]">sop-pack-v1.4</code>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface">Documentation Lead</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+                      APPROVED
+                    </span>
+</td>
+</tr>
+<!-- Row 08 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-primary">08. Disaster Recovery &amp; Non-repudiation</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Automated PITR recovery (&lt;90s RTO, zero data loss SLA)</div>
+</td>
+<td class="py-3.5 px-space-md">
+<code class="px-2 py-0.5 rounded bg-surface-container text-secondary font-mono text-[11px]">dr-drill-passed</code>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface">Security Lead</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">security</span>
+                      VERIFIED
+                    </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Metric & Download All -->
+<div class="pt-space-xs flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant">
+<span class="font-body-sm text-body-sm">All cryptographic artifacts backed by hardware-sealed SHA-256 signatures.</span>
+<button class="text-secondary hover:text-primary font-label-caps text-label-caps uppercase font-bold flex items-center gap-1" type="button">
+<span>View All 15 Artifact Records</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- SECTION B: Active Technical Support Triage Desk -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_6px_30px_rgba(59,16,36,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold">SECTION B · LIVE QUEUE</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">SLA COMPLIANCE: 100%</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Technical Support Desk &amp; Triage</h2>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-caps text-label-caps font-bold">
+              3 ACTIVE TICKETS
+            </span>
+</div>
+<!-- Card 1 (HIGH PRIORITY) -->
+<div class="p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">HIGH SEVERITY</span>
+<span class="font-mono text-[12px] text-secondary font-bold">CASE-2026-042</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">· Media Manager &amp; PDP</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps text-secondary font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                IN PROGRESS
+              </span>
+</div>
+<div class="font-title-md text-title-md text-primary">
+              Media CDN Cache Invalidation Delay on Celimax Serum Variant Swap
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              When updating hero tincture imagery, Vercel Edge cache invalidation takes up to 4 minutes instead of the instantaneous 200ms purge. Edge route handler queuing currently resolving.
+            </p>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Reported by: <strong class="text-on-surface font-medium">Lina M. (Admin)</strong> · 22m ago</span>
+<button class="text-primary hover:text-secondary font-label-caps text-label-caps font-bold flex items-center gap-0.5" type="button">
+<span>Investigate Case</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Card 2 (LOW PRIORITY) -->
+<div class="p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-label-caps font-bold">LOW SEVERITY</span>
+<span class="font-mono text-[12px] text-secondary font-bold">CASE-2026-039</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">· Storefront Navigation</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">UNDER REVIEW</span>
+</div>
+<div class="font-title-md text-title-md text-primary">
+              Arabic RTL Kerning Adjustment on Assaf Perfume Accord Sub-labels
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Subtle baseline shift in the IBM Plex Sans Arabic glyph rendering on mobile Safari when displaying luxury perfume accord notes.
+            </p>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Reported by: <strong class="text-on-surface font-medium">Sara K. (Founder)</strong> · 1h ago</span>
+<button class="text-primary hover:text-secondary font-label-caps text-label-caps font-bold flex items-center gap-0.5" type="button">
+<span>Investigate Case</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Card 3 (LOW PRIORITY) -->
+<div class="p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-label-caps font-bold">SCHEDULED</span>
+<span class="font-mono text-[12px] text-secondary font-bold">CASE-2026-035</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">· Inventory Module</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">QUEUED OCT 20</span>
+</div>
+<div class="font-title-md text-title-md text-primary">
+              Automated Cron Check for Archived Supplier SKUs
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Weekly sync with French fragrance distributor feed needs to automatically deprecate discontinued seasonal sets without administrative manual confirmation.
+            </p>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Reported by: <strong class="text-on-surface font-medium">Jad H. (Logistics)</strong> · Yesterday</span>
+<button class="text-primary hover:text-secondary font-label-caps text-label-caps font-bold flex items-center gap-0.5" type="button">
+<span>Investigate Case</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (Inspector & Owner Handover Governance Panel ~38% -> 5 Cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- PANEL 1: Formal Project Handover & Custody Acceptance (Deep Burgundy Velvet Signature Container) -->
+<div class="relative overflow-hidden rounded-3xl bg-primary-container text-surface p-space-lg shadow-[0_12px_44px_rgba(39,13,26,0.35)] flex flex-col gap-space-md">
+<!-- Subtle Luxury Inset & Watermark -->
+<div class="absolute -right-8 -bottom-8 w-48 h-48 rounded-full bg-secondary-fixed/5 pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-secondary-fixed text-primary-container flex items-center justify-center font-bold text-[14px]">
+                S
+              </div>
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-widest">FORMAL CUSTODY TRANSFER</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">
+              FINAL STAGE
+            </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-surface leading-tight mb-space-xs">
+              Deliverables Transfer &amp; Acceptance
+            </h3>
+<p class="font-body-md text-body-md text-secondary-fixed-dim leading-relaxed">
+              Formal operational handover of the BY SARA e-commerce ecosystem, source code repositories, and Neon DB clusters to Founder &amp; Lead Curator Sara K.
+            </p>
+</div>
+<!-- Acceptance Checklist with high aesthetic -->
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex items-start gap-space-xs p-2.5 rounded-xl bg-tertiary-container/60">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-surface-container-high leading-snug">
+                All 25 high-fidelity storefront &amp; administrative modules delivered and validated.
+              </span>
+</div>
+<div class="flex items-start gap-space-xs p-2.5 rounded-xl bg-tertiary-container/60">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-surface-container-high leading-snug">
+                Zero critical security vulnerabilities or broken cryptographic access controls.
+              </span>
+</div>
+<div class="flex items-start gap-space-xs p-2.5 rounded-xl bg-tertiary-container/60">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-surface-container-high leading-snug">
+                Protected Owner root credentials isolated with hardware WebAuthn (FIDO2 keys).
+              </span>
+</div>
+<div class="flex items-start gap-space-xs p-2.5 rounded-xl bg-tertiary-container/60">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-surface-container-high leading-snug">
+                Operational runbooks, inventory reconciliation SOPs, and staff training complete.
+              </span>
+</div>
+<div class="flex items-start gap-space-xs p-2.5 rounded-xl bg-secondary-container/20">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0 mt-0.5 animate-pulse">pending</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed leading-snug font-medium">
+                Awaiting final Owner cryptographic handover confirmation.
+              </span>
+</div>
+</div>
+<!-- Formal Sign-Off Box -->
+<div class="p-space-md rounded-2xl bg-tertiary-container flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed">Authorized Receiving Signatory</span>
+<div class="flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm text-surface">Sara K.</div>
+<div class="font-body-sm text-body-sm text-secondary-fixed-dim">Founder &amp; Lead Curator — BY SARA Maison de Beauté</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+                SK
+              </div>
+</div>
+</div>
+<!-- Primary Sign Action -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-3.5 px-space-md rounded-xl bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label-md text-label-md font-bold shadow-[0_4px_20px_rgba(255,213,177,0.25)] transition-all flex items-center justify-center gap-space-xs group" type="button">
+<span class="material-symbols-outlined text-[20px] group-hover:rotate-12 transition-transform">fingerprint</span>
+<span>Sign &amp; Finalize Handover (WebAuthn FIDO2)</span>
+</button>
+<button class="w-full py-2.5 px-space-md rounded-xl hover:bg-tertiary-container text-secondary-fixed-dim hover:text-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Export Certificate of Handover (Legal PDF)</span>
+</button>
+</div>
+</div>
+<!-- PANEL 2: Production SLA & Support Roster -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_6px_30px_rgba(59,16,36,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold">ESCALATION &amp; ROSTER</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-bold">SLA: 99.9% TIER-1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Technical Support Roster</h3>
+<div class="space-y-space-sm">
+<!-- Tier 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">
+                  LM
+                </div>
+<div>
+<div class="font-label-md text-label-md text-primary">Lina M. · Dedicated Atelier Ops</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Tier 1 Support · Mon–Sat 09:00–19:00 EET</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps text-secondary font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                ACTIVE
+              </span>
+</div>
+<!-- Tier 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-bold text-xs">
+                  VE
+                </div>
+<div>
+<div class="font-label-md text-label-md text-primary">Vercel &amp; Neon Enterprise SRE</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Tier 2 Infrastructure · 24/7/365 Hotline</div>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">
+                STANDBY
+              </span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Emergency operational escalation protocols are codified under <strong class="text-on-surface">Runbook SOP-09</strong> with automated SMS and WhatsApp priority alerting.
+          </p>
+</div>
+<!-- PANEL 3: Operational Runbook Quick Links -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_6px_30px_rgba(59,16,36,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold">VERIFIED RUNBOOKS</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">library_books</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Operational SOP Quick Access</h3>
+<div class="divide-y divide-surface-container">
+<a class="py-2.5 flex items-center justify-between text-on-surface hover:text-secondary group transition-colors" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-[11px] text-secondary font-bold">SOP-01</span>
+<span class="font-body-md text-body-md group-hover:translate-x-0.5 transition-transform">Product SKU Creation &amp; Publishing Checklist</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-secondary">arrow_outward</span>
+</a>
+<a class="py-2.5 flex items-center justify-between text-on-surface hover:text-secondary group transition-colors" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-[11px] text-secondary font-bold">SOP-04</span>
+<span class="font-body-md text-body-md group-hover:translate-x-0.5 transition-transform">Inventory Reconciliation &amp; Depot Stock Auditing</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-secondary">arrow_outward</span>
+</a>
+<a class="py-2.5 flex items-center justify-between text-on-surface hover:text-secondary group transition-colors" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-[11px] text-secondary font-bold">SOP-08</span>
+<span class="font-body-md text-body-md group-hover:translate-x-0.5 transition-transform">Urgent Rollback &amp; Database PITR Restoration (&lt;90s)</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-secondary">arrow_outward</span>
+</a>
+<a class="py-2.5 flex items-center justify-between text-on-surface hover:text-secondary group transition-colors" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-[11px] text-secondary font-bold">SOP-12</span>
+<span class="font-body-md text-body-md group-hover:translate-x-0.5 transition-transform">Staff Account Provisioning &amp; RBAC De-escalation</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-secondary">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Bottom Section: Live Post-Launch Operational Audit Stream -->
+<section class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_6px_30px_rgba(59,16,36,0.04)] flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold">NEON POSTGRESQL AUDIT TRAIL</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">NON-REPUDIATION SECURED</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Live Authoritative Operational Event Log</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Streaming from Postgres WAL</span>
+</div>
+</div>
+<!-- 4 Event Cards Horizontal Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Event 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-mono text-[12px] text-secondary font-bold">16:30 EET</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">
+              HANDOVER_STAGE
+            </span>
+</div>
+<p class="font-body-md text-body-md text-primary leading-snug">
+            Project Handover Dossier v1.0 compiled for Sara K. review.
+          </p>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Actor: <strong class="text-on-surface font-normal">Principal System Architect</strong></span>
+<span class="material-symbols-outlined text-[16px] text-secondary">assignment_turned_in</span>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-mono text-[12px] text-secondary font-bold">15:50 EET</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-caps text-label-caps font-bold">
+              CASE_UPDATED
+            </span>
+</div>
+<p class="font-body-md text-body-md text-primary leading-snug">
+            Support Case #042 triaged to Edge CDN routing team.
+          </p>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Actor: <strong class="text-on-surface font-normal">Lina M. (Admin)</strong></span>
+<span class="material-symbols-outlined text-[16px] text-secondary">alt_route</span>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-mono text-[12px] text-secondary font-bold">14:15 EET</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-caps text-label-caps font-bold">
+              BACKUP_VERIFY
+            </span>
+</div>
+<p class="font-body-md text-body-md text-primary leading-snug">
+            Neon PostgreSQL automated snapshot PITR verified (Integrity 100%).
+          </p>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Actor: <strong class="text-on-surface font-normal">System Cron</strong></span>
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+</div>
+</div>
+<!-- Event 4 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-mono text-[12px] text-secondary font-bold">10:00 EET</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-caps text-label-caps font-bold">
+              PROD_MONITOR
+            </span>
+</div>
+<p class="font-body-md text-body-md text-primary leading-snug">
+            All 24 live edge nodes reporting 0.00% 5xx error rate.
+          </p>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Actor: <strong class="text-on-surface font-normal">Vercel Telemetry</strong></span>
+<span class="material-symbols-outlined text-[16px] text-secondary">network_check</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-sm shadow-[0_-1px_6px_rgba(59,16,36,0.03)]"><div class="w-full px-space-lg flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-xs font-label-caps text-label-caps uppercase"><span>BY SARA Luxury Operations &amp; Handover Suite</span><span>·</span><span>Beirut (UTC+3)</span></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>All Systems Nominal</span></div></div></footer></div></body></html>
