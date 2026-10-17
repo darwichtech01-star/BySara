@@ -1,0 +1,717 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#1c1c1a", "secondary-container": "#ffd5b1", "surface-dim": "#dcdad7", "error-container": "#ffdad6", "surface-tint": "#854e63", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "secondary": "#77583c", "on-secondary": "#ffffff", "surface-container-low": "#f6f3f0", "primary-fixed": "#ffd9e4", "primary": "#1a000b", "outline": "#837377", "background": "#fcf9f6", "on-primary-fixed-variant": "#6a374b", "on-primary-container": "#b3768d", "tertiary-fixed-dim": "#f5b8aa", "on-secondary-fixed-variant": "#5d4127", "surface-variant": "#e5e2df", "on-error-container": "#93000a", "on-error": "#ffffff", "tertiary-container": "#38160e", "on-surface": "#1c1c1a", "surface-bright": "#fcf9f6", "inverse-surface": "#31302f", "inverse-on-surface": "#f3f0ed", "tertiary": "#190200", "primary-fixed-dim": "#f9b3cc", "on-tertiary-fixed": "#32120a", "surface-container-lowest": "#ffffff", "surface-container": "#f0edea", "surface": "#fcf9f6", "primary-container": "#3b1024", "on-secondary-fixed": "#2c1702", "on-surface-variant": "#504347", "tertiary-fixed": "#ffdad2", "secondary-fixed-dim": "#e7bf9c", "error": "#ba1a1a", "outline-variant": "#d5c2c7", "on-tertiary-fixed-variant": "#663c31", "surface-container-highest": "#e5e2df", "on-tertiary-container": "#b07b6e", "secondary-fixed": "#ffdcbf", "surface-container-high": "#eae8e5", "on-primary-fixed": "#360b20", "on-secondary-container": "#795b3e", "inverse-primary": "#f9b3cc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-md": "1rem", "gutter": "1.5rem", "margin": "3rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-lg": [ "Playfair Display" ], "display-lg": [ "Playfair Display" ], "title-md": [ "Plus Jakarta Sans" ], "display-md": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "display-md-mobile": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ], "label-caps": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-lg": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "0.005em", "fontWeight": "600" } ], "display-md": [ "42px", { "lineHeight": "50px", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "display-md-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "700" } ], "display-lg-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-1.5 px-margin"><div class="max-w-[1380px] mx-auto flex items-center justify-between text-body-sm font-body-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-sm text-secondary-container">local_shipping</span><span class="">Bespoke Gifting &amp; Complimentary Beirut Atelier Delivery</span></div><div class="flex items-center gap-space-lg text-body-sm"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-sm text-secondary-container">call</span>WhatsApp: +961 1 980 000</span><button class="hover:text-secondary-container transition-colors" type="button">EN / عربي</button></div></div></div><div class="h-20 max-w-[1380px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><span class="font-headline-md text-headline-md tracking-wider text-primary">BY SARA</span><span class="font-label-caps text-label-caps text-secondary uppercase self-end mb-1">Beirut</span></a><div class="hidden xl:flex items-center relative w-64"><span class="material-symbols-outlined absolute left-3 text-outline text-lg">search</span><input class="w-full pl-9 pr-3 py-2 bg-surface-container-low rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search haute skincare, elixirs..." type="text"></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-md"><a class="relative p-2 rounded-full text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined text-xl">favorite</span><span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-primary-container text-on-primary text-[10px] flex items-center justify-center font-bold">5</span></a><a class="relative p-2 rounded-full text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="inquiry-bag" href="#"><span class="material-symbols-outlined text-xl">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary text-[10px] flex items-center justify-center font-bold">3</span></a></div><div class="h-6 w-[1px] bg-outline-variant hidden sm:block"></div><a class="flex items-center gap-space-sm pl-space-xs" data-path="concierge-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1XDV0XGuAy2Qmi9UbCRxiF89p6xCeQmyPKeW5AA20_jaSQGA0GfB7rAdwpLGeYVLaoShNJ29Swhf1NcoJwQ7QF6fQxKwWpjiZkWKwyiu11PduBRplhouugxHlYo8nDoPwIXlJpv6O02As0CScm9iRjtNDH3CKKkvnknp2i4ZrgJHbQO8T5mYoBrSVmyJbwpM9w10-BHg19L7DwoUu8iMtozNeUJFXeabfLmw_MbTyt2aVF5Usrn2eJOuyqy4EKxY9DEBZQKuZaCOA"><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">Maison Sara</span><span class="font-label-caps text-label-caps text-secondary leading-tight mt-0.5">VIP Patron</span></div></a></div></div><div class="bg-surface-container-low/80 backdrop-blur-md"><div class="max-w-[1380px] mx-auto px-margin"><nav class="flex items-center justify-between overflow-x-auto py-2 gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="shop-all" href="#">Shop All</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="face-care" href="#">Face Care</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="sun-care" href="#">Sun Care</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="hair-products" href="#">Hair Products</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="body-products" href="#">Body Products</a><a aria-current="page" class="px-3 py-1.5 rounded-lg transition-all whitespace-nowrap bg-primary-container text-on-primary font-bold" data-path="luxury-sets-offers-and-gifting" href="#">Sets &amp; Offers</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="fragrance" href="#">Fragrance</a><a class="px-3 py-1.5 rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-path="makeup-and-tools" href="#">Makeup &amp; Tools</a></nav></div></div></header><main class="w-full pt-36 bg-background"><div class="flex flex-col w-full">
+<!-- Interactive State Switcher Ribbon -->
+<section class="w-full bg-primary-container text-on-primary border-b border-primary/40 px-4 py-2.5">
+<div class="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-body-sm font-body-sm">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-caps text-label-caps text-secondary-container tracking-wider uppercase flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">tune</span> Viewport &amp; State Controller:
+        </span>
+<div class="flex items-center gap-1 bg-primary/60 p-1 rounded-lg">
+<button class="px-2.5 py-1 rounded bg-secondary-container text-primary font-bold transition-all text-xs" id="btn-state-gifting">01 Gifting Landing</button>
+<button class="px-2.5 py-1 rounded text-surface-container-highest hover:text-white transition-all text-xs" id="btn-state-shelf">02 Sets Collection Shelf</button>
+<button class="px-2.5 py-1 rounded text-surface-container-highest hover:text-white transition-all text-xs" id="btn-state-modal">03 Gift Set PDP Modal</button>
+<button class="px-2.5 py-1 rounded text-surface-container-highest hover:text-white transition-all text-xs" id="btn-state-empty">04 Empty State</button>
+<button class="px-2.5 py-1 rounded text-surface-container-highest hover:text-white transition-all text-xs" id="btn-state-rtl">05 Arabic RTL</button>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs text-secondary-container/90">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">Beirut Vault Stock Verified • Same-Day Chauffeur Packaging Active</span>
+</div>
+</div>
+</section>
+<!-- Empty State Panel (Hidden by default, triggered by State Switcher) -->
+<section class="hidden w-full py-20 px-6 max-w-[1360px] mx-auto text-center" id="empty-state-view">
+<div class="max-w-md mx-auto bg-surface-container-lowest p-10 rounded-2xl shadow-xl border border-secondary-container/20 flex flex-col items-center">
+<span class="material-symbols-outlined text-5xl text-secondary mb-4">redeem</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Vault Custom Box Empty</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">You currently have no individual rituals queued for bespoke luxury packaging. Select from our signature sets or contact our Beirut atelier.</p>
+<button class="px-6 py-3 bg-primary-container text-on-primary rounded-xl font-label-md text-label-md shadow-md hover:bg-primary transition-all" onclick="document.getElementById('btn-state-gifting').click()">Return to Gift Edit</button>
+</div>
+</section>
+<!-- Main Gifting Container -->
+<div class="flex flex-col w-full" id="main-gifting-view">
+<!-- Breadcrumb & Editorial Hero -->
+<section class="w-full relative overflow-hidden bg-gradient-to-b from-surface-container-low via-background to-background py-10 md:py-16">
+<div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mb-8">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-xs">/</span>
+<span class="text-primary font-medium">Sets &amp; Offers</span>
+</nav>
+<!-- Asymmetric Hero Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Left Content (45%) -->
+<div class="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-6">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/50 text-secondary font-label-caps text-label-caps uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-xs">local_mall</span> THE BY SARA GIFT EDIT • DOWNTOWN BEIRUT VAULT
+            </span>
+<h1 class="font-display-lg text-display-lg text-primary leading-[1.08] mb-6">
+              Beautifully chosen. <br>
+<span class="italic font-normal text-on-primary-container">Thoughtfully gifted.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+              Discover curated beauty favorites, thoughtful gift boxes, and authentic restorative collections packaged by hand in bespoke velvet and champagne trims for the moments that matter.
+            </p>
+<div class="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
+<a class="px-8 py-4 bg-primary-container text-on-primary hover:bg-primary rounded-xl font-label-md text-label-md transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2" href="#curated-sets">
+<span class="">EXPLORE GIFTING</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="px-8 py-4 bg-surface-container-low text-primary border border-secondary-container hover:bg-surface-container rounded-xl font-label-md text-label-md transition-all" href="#gifting-categories">
+                BROWSE BEAUTY SETS
+              </a>
+</div>
+<!-- Trust Metrics Strip -->
+<div class="flex flex-wrap items-center gap-6 pt-6 border-t border-outline-variant/40 text-on-surface-variant text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">bookmark_heart</span>
+<span class="">Hand-Tied Velvet Ribbons</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">edit_note</span>
+<span class="">Calligraphy Cards</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">ac_unit</span>
+<span class="">18°C Controlled Vault</span>
+</div>
+</div>
+</div>
+<!-- Right Showcase Hero (55%) -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full rounded-3xl p-6 md:p-10 bg-gradient-to-br from-surface-container via-surface-container-low to-secondary-container/20 shadow-2xl overflow-hidden border border-secondary-container/40">
+<!-- Subtle decorative velvet sheen badge -->
+<div class="absolute top-6 right-6 z-20 bg-primary-container text-on-primary px-4 py-1.5 rounded-full text-xs font-label-caps tracking-widest uppercase shadow-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-container">star</span>
+                The Vault Ritual Box • Curated by Sara
+              </div>
+<!-- Product Still Life Composition -->
+<div class="relative z-10 grid grid-cols-3 gap-3 md:gap-4 items-end mt-4">
+<div class="group relative rounded-2xl overflow-hidden bg-white shadow-lg p-2 transition-transform duration-500 hover:-translate-y-1">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-lowest">
+<img alt="Dr. Althea 345 Relief Cream" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC08m6ZSeWd_2HWxd8JewAxGxWhJI8Rq5_L4N_4X9AmlNBOv0Uo2AWLmMEzPBb9KE6isVSq2BiPVQ0-kdQNvIKT2jk18aQcCHpwWw5Ki-IRoy-Xc7ei8omg_ry5yRyADjshDy3HpmWjtDQbNMDzZmAQe7KOjzSvL2HtW7JyIhkX53FNqONjVDuLX3iH207PSYhzOcHLH4pXkvwyfyxOMtFqw4ZDJ1zebkEDDB5jGk_yNnU31YhY0MsS">
+</div>
+<div class="p-2 text-center">
+<p class="text-[11px] font-label-caps text-secondary uppercase truncate">Dr. Althea</p>
+<p class="text-xs font-bold text-primary truncate">345 Relief Cream</p>
+</div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden bg-white shadow-xl p-3 -mt-6 transition-transform duration-500 hover:-translate-y-2 border-2 border-secondary-container/60">
+<span class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-label-caps uppercase px-2 py-0.5 rounded-full z-10">Signature</span>
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-lowest">
+<img alt="Anua Heartleaf Pore Cleansing Foam" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVF7i7Xe7-ZFaQpyvLWfUSRjpVDwvp3K6gibXokUEzYqW5DXRv_kQDCokylF7L8Ac4lY187eGeY3Kjy0yeNjXZpBIDvnNtbInKXn9aoBsQ7OeBo24TfoJXcpDsgo8pzE4IW-IOSqMnZ5EXuMfT_KwvpiTnxXy-sAc8w7ggmvAWXYRlmXPCZzxBxpyvKIaT5L-RzgyJJ6PcZZGLO9NqVjD-DiS9AncNe-x8WTK81HzpWg12i_yDK_tm">
+</div>
+<div class="p-2 text-center">
+<p class="text-[11px] font-label-caps text-secondary uppercase truncate">Anua Heartleaf</p>
+<p class="text-xs font-bold text-primary truncate">Quercetinol Cleanser</p>
+</div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden bg-white shadow-lg p-2 transition-transform duration-500 hover:-translate-y-1">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-lowest">
+<img alt="Celimax Pore Serum" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkgaELvjPkOZRHId93ZvA6JxLeSCDkGYd1J3QbFCe2GzlUVoxsmG8SepMiuAoKafVgb__fa8gdtjJcRxbhQbqKrqaQI16Me4NC16yMMsoQlunOwaKKu03sO0LSZr_vHRxvnCPWv6mECgUVzXDtpYF_UppZW3CeufNgIzTdYFnbsWkK9Zse5K-fRpv8uwvQW90jUnWIVDG_uI08WjwPTHzwWrYInYE4ixHXCOR4WLqc-CKFA50YuvZw">
+</div>
+<div class="p-2 text-center">
+<p class="text-[11px] font-label-caps text-secondary uppercase truncate">Celimax Pore</p>
+<p class="text-xs font-bold text-primary truncate">Defensive Serum</p>
+</div>
+</div>
+</div>
+<!-- Floating Atelier Seal Overlay -->
+<div class="mt-6 flex items-center justify-between bg-white/80 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-secondary-container/30">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-container flex items-center justify-center font-bold text-sm">
+                    BS
+                  </div>
+<div>
+<h4 class="font-headline-sm text-sm text-primary font-bold">Limited Vault Edition Nº 12</h4>
+<p class="text-xs text-on-surface-variant">Includes signature Damascene velvet gift box &amp; wax seal</p>
+</div>
+</div>
+<span class="text-primary font-headline-sm text-base font-bold">$125.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Shop by Gifting Category (6 Curated Editorial Tiles) -->
+<section class="w-full py-16 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8" id="gifting-categories">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">CURATED FOR EVERY OCCASION</span>
+<h2 class="font-display-md text-display-md text-primary mt-2">Find something beautiful.</h2>
+<div class="w-12 h-0.5 bg-secondary mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<!-- Tile 1 -->
+<a class="group flex flex-col items-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-secondary-container/20" href="#curated-sets">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-3">
+<img alt="Skincare Sets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVF7i7Xe7-ZFaQpyvLWfUSRjpVDwvp3K6gibXokUEzYqW5DXRv_kQDCokylF7L8Ac4lY187eGeY3Kjy0yeNjXZpBIDvnNtbInKXn9aoBsQ7OeBo24TfoJXcpDsgo8pzE4IW-IOSqMnZ5EXuMfT_KwvpiTnxXy-sAc8w7ggmvAWXYRlmXPCZzxBxpyvKIaT5L-RzgyJJ6PcZZGLO9NqVjD-DiS9AncNe-x8WTK81HzpWg12i_yDK_tm">
+</div>
+<span class="font-title-md text-sm text-primary text-center group-hover:text-secondary transition-colors">Skincare Sets</span>
+<span class="text-xs text-on-surface-variant mt-0.5">4 Formulations</span>
+</a>
+<!-- Tile 2 -->
+<a class="group flex flex-col items-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-secondary-container/20" href="#curated-sets">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-3">
+<img alt="Hair Care Sets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM68KZhm6f1X9nGiKgMrAaif60Mi8ADdeMCmvxCBRa-UpyC2FXSkqRXq_XIbFJ_VqviYj_c0xuCtI4xd2twfCm-V6cRCFNLh2d1li1OvTU3nSSirwjuxip75w84biQ4QQEzw7sPGFcAScuOVHRdGDKQAKfPE0sOWAi1iOFmw43cEjgU5hfaX2nlpC3qEvcSj8ZAIJA57ruqKkgCHHjxGiq-bTjkffkE828OIqRiP4N1tiGMRw_F01I">
+</div>
+<span class="font-title-md text-sm text-primary text-center group-hover:text-secondary transition-colors">Hair Care Sets</span>
+<span class="text-xs text-on-surface-variant mt-0.5">3 Rituals</span>
+</a>
+<!-- Tile 3 -->
+<a class="group flex flex-col items-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-secondary-container/20" href="#curated-sets">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-3">
+<img alt="Body Care Sets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4MZmjb18lzdSKjPJUk8b5nIQNR-RTaXX61LzIbPkA0r1hl6U0twlD5RbuUJwxmqKk0i369OfZ0vupvkOQNamdlJXa_iO6BOMPlDFmEAYuB-vKwTsNkVuPArGRwl4j0i15xXJPfZGmlBMxh2i30j0opss3B7dyvV6tiuTfnKmxVGsqGH4iHtN8B5gxJxrbC-PaTX5vssG-URQUdDnV9g6Zj3HCgPB2Ck4rNBzRjh8C-HLUtmy8DYCi">
+</div>
+<span class="font-title-md text-sm text-primary text-center group-hover:text-secondary transition-colors">Body Care Sets</span>
+<span class="text-xs text-on-surface-variant mt-0.5">4 Treatments</span>
+</a>
+<!-- Tile 4 -->
+<a class="group flex flex-col items-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-secondary-container/20" href="#curated-sets">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-3">
+<img alt="Gift Boxes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD-HZEcKioyqoNnWTZoA881-LhJcNkhs_Y0VL_yz2RZvHA6tfDHeVZYArHtWB3Vg3hY8ZnoNnPeEMEqB_C79k6DQYtY4bYg3YBtskvkeLBNZdeeC0Rb11i6JEToVNVNEoPdseI4iWGz9NoyQBg99WJNVRUoM3dyJbbxFgcUJ3vqEuLPZ4M5ecaS6p47hXDMnnIEXpW4vf0rJHogugLSpLJjQNc3vpduWwXcmLy3g_VuHz5uUat8Rbz">
+</div>
+<span class="font-title-md text-sm text-primary text-center group-hover:text-secondary transition-colors">Gift Boxes</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Bespoke Keepsakes</span>
+</a>
+<!-- Tile 5 -->
+<a class="group flex flex-col items-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-secondary-container/20" href="#curated-sets">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-3">
+<img alt="New Arrivals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkgaELvjPkOZRHId93ZvA6JxLeSCDkGYd1J3QbFCe2GzlUVoxsmG8SepMiuAoKafVgb__fa8gdtjJcRxbhQbqKrqaQI16Me4NC16yMMsoQlunOwaKKu03sO0LSZr_vHRxvnCPWv6mECgUVzXDtpYF_UppZW3CeufNgIzTdYFnbsWkK9Zse5K-fRpv8uwvQW90jUnWIVDG_uI08WjwPTHzwWrYInYE4ixHXCOR4WLqc-CKFA50YuvZw">
+</div>
+<span class="font-title-md text-sm text-primary text-center group-hover:text-secondary transition-colors">New Arrivals</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Just Landed Beirut</span>
+</a>
+<!-- Tile 6 -->
+<a class="group flex flex-col items-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-secondary-container/20" href="#curated-sets">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-3">
+<img alt="Best Sellers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkS7qirU4vG5HzhgxLvxrADNS7tmUYfF0XUwW8yAQoHVqStLFNZQFtknysjmnDnHzqDvbAW7vEzbD69OgP6qarLwm6WSZQkl6URiFGE8RwIa25fCU6ufXTkUu3lWtyNxrFtIS-XH6wQ8W106bqQYLmk5UXZ2kf9jkOPx2Fv9qNAdt7ZzKdJ1SLRaQ6gkwblZ-99jQePFTXQa322T73kb9SuUIgawgoPhpiNvvgqv2s1alAixW8zsxg">
+</div>
+<span class="font-title-md text-sm text-primary text-center group-hover:text-secondary transition-colors">Best Sellers</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Mediterranean Icons</span>
+</a>
+</div>
+</section>
+<!-- Curated Beauty Sets & Verified Offers Grid -->
+<section class="w-full py-12 bg-surface-container-low/60" id="curated-sets">
+<div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-outline-variant/30">
+<div>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">THE CURATED EDIT</span>
+<h2 class="font-display-md text-display-md text-primary mt-1">Better together.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Thoughtful beauty pairings with transparent, verified catalog pricing. Inquire directly via WhatsApp for custom ribbon inscriptions.
+            </p>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto mt-4 md:mt-0 py-1">
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-xs whitespace-nowrap shadow-sm">All Sets &amp; Offers (6)</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-xs whitespace-nowrap transition-colors">Skincare Sets (3)</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-xs whitespace-nowrap transition-colors">Hair Rituals (1)</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-xs whitespace-nowrap transition-colors">Body Sanctuary (1)</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-xs whitespace-nowrap transition-colors">Vault Keepsakes (1)</button>
+</div>
+</div>
+<!-- 4-Column Luxury Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border border-secondary-container/20">
+<div>
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container mb-4">
+<img alt="The Glass Skin Barrier Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVF7i7Xe7-ZFaQpyvLWfUSRjpVDwvp3K6gibXokUEzYqW5DXRv_kQDCokylF7L8Ac4lY187eGeY3Kjy0yeNjXZpBIDvnNtbInKXn9aoBsQ7OeBo24TfoJXcpDsgo8pzE4IW-IOSqMnZ5EXuMfT_KwvpiTnxXy-sAc8w7ggmvAWXYRlmXPCZzxBxpyvKIaT5L-RzgyJJ6PcZZGLO9NqVjD-DiS9AncNe-x8WTK81HzpWg12i_yDK_tm">
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary-container text-on-primary text-[10px] font-label-caps uppercase px-2.5 py-1 rounded-full shadow-sm">Curated Set</span>
+<span class="bg-emerald-800 text-white text-[10px] font-label-caps uppercase px-2 py-0.5 rounded-full shadow-sm">Beirut Stock</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-primary flex items-center justify-center transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">favorite_border</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-xs text-secondary mb-1">
+<span class="font-label-caps uppercase tracking-wider">Anua • 2 Full Size Essentials</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary group-hover:text-secondary transition-colors">
+                The Glass Skin Barrier Set
+              </h3>
+<p class="text-xs text-on-surface-variant mt-1 line-clamp-2">
+                Deep pore botanical clearing paired with intense hydration for refined, luminous Levantine texture.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30">
+<div class="flex items-baseline justify-between mb-3">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$46.00</span>
+<span class="text-xs text-outline line-through">$54.00</span>
+</div>
+<span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Save $8</span>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full py-2.5 bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl font-label-md text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm" href="https://wa.me/96170000000?text=I%20would%20like%20to%20inquire%20about%20The%20Glass%20Skin%20Barrier%20Set" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="">Inquire on WhatsApp</span>
+</a>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 bg-surface-container text-primary hover:bg-secondary-container/40 rounded-xl font-label-md text-xs transition-colors">
+                    Add to Bag
+                  </button>
+<button class="py-2 bg-surface-container-low text-on-surface-variant hover:text-primary rounded-xl font-label-md text-xs transition-colors flex items-center justify-center gap-1" id="open-sample-modal">
+<span class="material-symbols-outlined text-xs">visibility</span> Details
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border border-secondary-container/20">
+<div>
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container mb-4">
+<img alt="The Mediterranean Glow Trio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0JGdNFiS2gD5YybptvfESIFIKN6Bg6L3v37dU1Y4wuYfnhpucadojMGjSUd2wC9donYvpbQJOfc9xmw6SeaQj45Rlo_knLUef4AKBjhLU9xrAzmYSTECzGR1_k_UI3LDTM-LEuXTHCNt-VyQdXPYA0yKoxZMc1t6nWtpCXkZtWeLiXkYE4OnaDSlIsY9lUrFwerZDLX9xaqFE-lRE4TfIzNQAIB_Sd7hQGZIy411FL87yVaTnUbig">
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-secondary text-white text-[10px] font-label-caps uppercase px-2.5 py-1 rounded-full shadow-sm">Editorial Curation</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-primary flex items-center justify-center transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">favorite_border</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-xs text-secondary mb-1">
+<span class="font-label-caps uppercase tracking-wider">Celimax • Tocobo • 3 Items</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary group-hover:text-secondary transition-colors">
+                The Mediterranean Glow Trio
+              </h3>
+<p class="text-xs text-on-surface-variant mt-1 line-clamp-2">
+                Sun defense shield accompanied by pore-blurring serum and soothing calming botanicals.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30">
+<div class="flex items-baseline justify-between mb-3">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$67.00</span>
+<span class="text-xs text-outline line-through">$78.00</span>
+</div>
+<span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Save $11</span>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full py-2.5 bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl font-label-md text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm" href="https://wa.me/96170000000?text=Inquiring%20about%20Mediterranean%20Glow%20Trio" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="">Inquire on WhatsApp</span>
+</a>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 bg-surface-container text-primary hover:bg-secondary-container/40 rounded-xl font-label-md text-xs transition-colors">
+                    Add to Bag
+                  </button>
+<button class="py-2 bg-surface-container-low text-on-surface-variant hover:text-primary rounded-xl font-label-md text-xs transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-xs">visibility</span> Details
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border border-secondary-container/20">
+<div>
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container mb-4">
+<img alt="Overnight Collagen Rebirth Duo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD-HZEcKioyqoNnWTZoA881-LhJcNkhs_Y0VL_yz2RZvHA6tfDHeVZYArHtWB3Vg3hY8ZnoNnPeEMEqB_C79k6DQYtY4bYg3YBtskvkeLBNZdeeC0Rb11i6JEToVNVNEoPdseI4iWGz9NoyQBg99WJNVRUoM3dyJbbxFgcUJ3vqEuLPZ4M5ecaS6p47hXDMnnIEXpW4vf0rJHogugLSpLJjQNc3vpduWwXcmLy3g_VuHz5uUat8Rbz">
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary-container text-on-primary text-[10px] font-label-caps uppercase px-2.5 py-1 rounded-full shadow-sm">Night Ritual</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-primary flex items-center justify-center transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">favorite_border</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-xs text-secondary mb-1">
+<span class="font-label-caps uppercase tracking-wider">Medicube • SOME BY MI</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary group-hover:text-secondary transition-colors">
+                Overnight Collagen Rebirth Duo
+              </h3>
+<p class="text-xs text-on-surface-variant mt-1 line-clamp-2">
+                Intensive wrapping mask system combined with gentle clinical retinol to resurface while you rest.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30">
+<div class="flex items-baseline justify-between mb-3">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$59.00</span>
+<span class="text-xs text-outline line-through">$68.00</span>
+</div>
+<span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Save $9</span>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full py-2.5 bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl font-label-md text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm" href="https://wa.me/96170000000?text=Inquiring%20about%20Overnight%20Collagen%20Rebirth" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="">Inquire on WhatsApp</span>
+</a>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 bg-surface-container text-primary hover:bg-secondary-container/40 rounded-xl font-label-md text-xs transition-colors">
+                    Add to Bag
+                  </button>
+<button class="py-2 bg-surface-container-low text-on-surface-variant hover:text-primary rounded-xl font-label-md text-xs transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-xs">visibility</span> Details
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border border-secondary-container/20">
+<div>
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container mb-4">
+<img alt="Artisanal Hair Bond &amp; Rose Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM68KZhm6f1X9nGiKgMrAaif60Mi8ADdeMCmvxCBRa-UpyC2FXSkqRXq_XIbFJ_VqviYj_c0xuCtI4xd2twfCm-V6cRCFNLh2d1li1OvTU3nSSirwjuxip75w84biQ4QQEzw7sPGFcAScuOVHRdGDKQAKfPE0sOWAi1iOFmw43cEjgU5hfaX2nlpC3qEvcSj8ZAIJA57ruqKkgCHHjxGiq-bTjkffkE828OIqRiP4N1tiGMRw_F01I">
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary text-secondary-container text-[10px] font-label-caps uppercase px-2.5 py-1 rounded-full shadow-sm">Signature Pairing</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-primary flex items-center justify-center transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">favorite_border</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-xs text-secondary mb-1">
+<span class="font-label-caps uppercase tracking-wider">Olaplex • ASSAF • 2 Treasures</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary group-hover:text-secondary transition-colors">
+                Artisanal Damascene Hair Bond Set
+              </h3>
+<p class="text-xs text-on-surface-variant mt-1 line-clamp-2">
+                Olaplex No.3 bond rebuilding elixir paired with ASSAF Pink Misk for celestial hair scent and strength.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30">
+<div class="flex items-baseline justify-between mb-3">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$65.00</span>
+<span class="text-xs text-outline line-through">$75.00</span>
+</div>
+<span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Save $10</span>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full py-2.5 bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl font-label-md text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm" href="https://wa.me/96170000000?text=Inquiring%20about%20Hair%20Bond%20Set" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="">Inquire on WhatsApp</span>
+</a>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 bg-surface-container text-primary hover:bg-secondary-container/40 rounded-xl font-label-md text-xs transition-colors">
+                    Add to Bag
+                  </button>
+<button class="py-2 bg-surface-container-low text-on-surface-variant hover:text-primary rounded-xl font-label-md text-xs transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-xs">visibility</span> Details
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- "Inside the Set" Interactive Gift Set Detail Callout -->
+<section class="w-full py-16 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-surface-container-lowest rounded-3xl p-8 lg:p-12 shadow-xl border border-secondary-container/30">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-5">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">INSIDE THE VAULT CURATION</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2 mb-4">The Glass Skin Barrier Set Breakdown</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              Every formula in our gift suites is uncompromised and full-sized. Never travel miniatures, never dilutions. Formulated in Korea, kept under climate-controlled vault standards in Beirut.
+            </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low border border-secondary-container/20">
+<span class="material-symbols-outlined text-secondary text-2xl mt-0.5">spa</span>
+<div>
+<h4 class="font-title-md text-sm text-primary font-bold">Item 01: Anua Heartleaf Quercetinol Pore Foam (150 ml)</h4>
+<p class="text-xs text-on-surface-variant mt-1">Full-sized purifying botanical cleanser that calms irritation, sweeps micro-dust, and prepares the epidermal layer.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low border border-secondary-container/20">
+<span class="material-symbols-outlined text-secondary text-2xl mt-0.5">water_drop</span>
+<div>
+<h4 class="font-title-md text-sm text-primary font-bold">Item 02: Advanced Snail 96 Mucin Power Essence (100 ml)</h4>
+<p class="text-xs text-on-surface-variant mt-1">Cult-favorite repair elixir supplying intense bio-compatible moisture, healing hyperpigmentation, and locking the barrier.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-primary-container/10 border border-primary-container/20">
+<span class="material-symbols-outlined text-primary-container text-2xl mt-0.5">card_giftcard</span>
+<div>
+<h4 class="font-title-md text-sm text-primary-container font-bold">Presentation: Bespoke Velvet Pouch &amp; Calligraphy Card</h4>
+<p class="text-xs text-on-surface-variant mt-1">Presented in BY SARA embossed velvet pouch with champagne trim and complimentary personalized handwritten calligraphy card.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col md:flex-row gap-6 items-center">
+<div class="w-full md:w-1/2 aspect-[4/5] rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img alt="Anua Cleanser Step" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVF7i7Xe7-ZFaQpyvLWfUSRjpVDwvp3K6gibXokUEzYqW5DXRv_kQDCokylF7L8Ac4lY187eGeY3Kjy0yeNjXZpBIDvnNtbInKXn9aoBsQ7OeBo24TfoJXcpDsgo8pzE4IW-IOSqMnZ5EXuMfT_KwvpiTnxXy-sAc8w7ggmvAWXYRlmXPCZzxBxpyvKIaT5L-RzgyJJ6PcZZGLO9NqVjD-DiS9AncNe-x8WTK81HzpWg12i_yDK_tm">
+</div>
+<div class="w-full md:w-1/2 aspect-[4/5] rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img alt="Skin1004 Ampoule Companion" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLJ5696yznWdPNfAVluqKS2rOzHIATAymZ5VIvpmdsTX0cv5vcFZ6IO95AQxPwMyl6m0G2iPB3n1aGQEgcu42sDB8K0YM7SwCXdECTK_fl3npe5thgnx64yF2n4sDiOOIO1TbsixzKv5RMoJ0aqN02MtNtlIleOPlob_4E0GFVAEFPCfTvHy1Pw4lkchh8icmTuOJaVA6o26xiBNGU9HEYmoXIvkNED5K9Mygl6EFwUr9kwXkNq3vv">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- "Shop by Occasion" Navigation Strip -->
+<section class="w-full py-12 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-8">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">THOUGHTFUL MOMENTS</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Shop by Occasion</h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container text-center transition-all cursor-pointer group shadow-sm hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container/60 text-secondary mx-auto flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">cake</span>
+</div>
+<h4 class="font-title-md text-sm text-primary font-bold">Birthday Celebrations</h4>
+<p class="text-xs text-on-surface-variant mt-1">Joyful self-care rituals</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container text-center transition-all cursor-pointer group shadow-sm hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container/60 text-secondary mx-auto flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+</div>
+<h4 class="font-title-md text-sm text-primary font-bold">Bridal &amp; Trousseau</h4>
+<p class="text-xs text-on-surface-variant mt-1">Opulent restorative sets</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container text-center transition-all cursor-pointer group shadow-sm hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container/60 text-secondary mx-auto flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+</div>
+<h4 class="font-title-md text-sm text-primary font-bold">Thank-You Gestures</h4>
+<p class="text-xs text-on-surface-variant mt-1">Discreet, elevated gifting</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container text-center transition-all cursor-pointer group shadow-sm hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container/60 text-secondary mx-auto flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">self_improvement</span>
+</div>
+<h4 class="font-title-md text-sm text-primary font-bold">Self-Care Moments</h4>
+<p class="text-xs text-on-surface-variant mt-1">Solitary Sunday resets</p>
+</div>
+</div>
+</section>
+<!-- Full-Width Velvet Editorial Manifesto ("The Art of Giving") -->
+<section class="w-full py-20 bg-primary-container text-on-primary relative overflow-hidden my-8">
+<div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="font-label-caps text-label-caps text-secondary-container tracking-widest uppercase mb-3 block">
+              THE ART OF GIVING • BEIRUT VAULT PHILOSOPHY
+            </span>
+<h2 class="font-display-lg text-display-lg text-on-primary mb-6 leading-tight">
+              A little beauty <br><span class="italic font-normal text-secondary-container">goes a long way.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-surface-container-highest/90 mb-8 leading-relaxed max-w-2xl">
+              In our Beirut atelier, every gift is treated as a ceremony. From temperature-controlled vault retrieval to custom Arabic calligraphy on cotton-pressed cards, we ensure your gesture arrives with Levantine warmth and uncompromising European luxury.
+            </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="px-8 py-4 bg-secondary text-white hover:bg-secondary/90 rounded-xl font-label-md text-label-md transition-all shadow-lg flex items-center gap-2" href="https://wa.me/96170000000" target="_blank">
+<span class="material-symbols-outlined text-base">chat</span>
+<span class="">Request Custom Gift Curation with Sara</span>
+</a>
+<span class="text-xs text-secondary-container font-label-caps uppercase tracking-wider">Direct Concierge VIP Desk</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="bg-primary/80 backdrop-blur-md rounded-3xl p-8 border border-secondary-container/30 shadow-2xl">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 rounded-full bg-secondary-container text-primary font-headline-md text-xl flex items-center justify-center font-bold">
+                  S
+                </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-white">Sara's Concierge Note</h4>
+<p class="text-xs text-secondary-container">Master Esthetician • Downtown Beirut</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-surface-container-highest/80 italic mb-6">
+                “Whether you are sending a token of gratitude across Achrafieh or pampering a bride in Mount Lebanon, each parcel is tied by hand with our signature 38mm French velvet ribbon.”
+              </p>
+<div class="pt-4 border-t border-primary-fixed-dim/20 flex items-center justify-between text-xs text-secondary-container">
+<span class="">Hand-delivery dispatch available</span>
+<span class="font-bold">Mon – Sun</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gifting Features & Integrity Banner (4 Pillars) -->
+<section class="w-full py-12 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="flex items-start gap-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm border border-secondary-container/20">
+<span class="material-symbols-outlined text-secondary text-3xl">brush</span>
+<div>
+<h4 class="font-title-md text-sm text-primary font-bold">Bespoke Calligraphy</h4>
+<p class="text-xs text-on-surface-variant mt-1">Hand-lettered personalized messages on heavy cotton-pressed notes.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm border border-secondary-container/20">
+<span class="material-symbols-outlined text-secondary text-3xl">directions_car</span>
+<div>
+<h4 class="font-title-md text-sm text-primary font-bold">Chauffeur Hand-Delivery</h4>
+<p class="text-xs text-on-surface-variant mt-1">Discreet, white-glove transport directly to private residences.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm border border-secondary-container/20">
+<span class="material-symbols-outlined text-secondary text-3xl">verified</span>
+<div>
+<h4 class="font-title-md text-sm text-primary font-bold">Seoul &amp; Paris Direct</h4>
+<p class="text-xs text-on-surface-variant mt-1">100% authenticated batch codes with cold-chain vault storage.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm border border-secondary-container/20">
+<span class="material-symbols-outlined text-secondary text-3xl">payments</span>
+<div>
+<h4 class="font-title-md text-sm text-primary font-bold">Flexible Settlement</h4>
+<p class="text-xs text-on-surface-variant mt-1">Transparent checkout in USD or Lebanese Pound at fair daily rate.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- PDP Modal Preview (Hidden by default, triggered by State Switcher or Card Detail buttons) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm" id="pdp-modal">
+<div class="bg-surface-container-lowest rounded-3xl max-w-3xl w-full p-6 md:p-8 shadow-2xl border border-secondary-container/40 relative max-h-[90vh] overflow-y-auto">
+<button class="absolute top-5 right-5 w-9 h-9 rounded-full bg-surface-container-low text-primary flex items-center justify-center hover:bg-surface-container transition-colors" id="close-modal-btn">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-2">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden bg-surface-container">
+<img alt="The Glass Skin Barrier Set" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVF7i7Xe7-ZFaQpyvLWfUSRjpVDwvp3K6gibXokUEzYqW5DXRv_kQDCokylF7L8Ac4lY187eGeY3Kjy0yeNjXZpBIDvnNtbInKXn9aoBsQ7OeBo24TfoJXcpDsgo8pzE4IW-IOSqMnZ5EXuMfT_KwvpiTnxXy-sAc8w7ggmvAWXYRlmXPCZzxBxpyvKIaT5L-RzgyJJ6PcZZGLO9NqVjD-DiS9AncNe-x8WTK81HzpWg12i_yDK_tm">
+</div>
+<div>
+<span class="bg-secondary-container/60 text-secondary text-[10px] font-label-caps uppercase px-2.5 py-1 rounded-full">Vault Ritual Set Nº 01</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-2">The Glass Skin Barrier Set</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 mb-4">
+            Curated pairing of Seoul's highest-regarded barrier soothing cleanser and reparative snail mucin nectar. Arrives in signature BY SARA box.
+          </p>
+<div class="space-y-2 mb-6 text-xs text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="">Anua Heartleaf Pore Deep Foam (150 ml)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="">COSRX Advanced Snail 96 Essence (100 ml)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="">Complimentary Damascene Velvet Keepsake Pouch</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3 mb-6">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$46.00 USD</span>
+<span class="text-xs text-outline line-through">$54.00</span>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full py-3 bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl font-label-md text-xs flex items-center justify-center gap-2 transition-all shadow-md" href="https://wa.me/96170000000?text=Direct%20Inquiry%20Glass%20Skin%20Barrier%20Set" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="">Inquire &amp; Reserve via WhatsApp</span>
+</a>
+<button class="w-full py-2.5 bg-surface-container text-primary rounded-xl font-label-md text-xs hover:bg-surface-container-high transition-colors" onclick="document.getElementById('pdp-modal').classList.add('hidden')">
+              Continue Browsing Sets
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- State Switching Interactive Vanilla JS -->
+<script>
+    (function() {
+      const btnGifting = document.getElementById('btn-state-gifting');
+      const btnShelf = document.getElementById('btn-state-shelf');
+      const btnModal = document.getElementById('btn-state-modal');
+      const btnEmpty = document.getElementById('btn-state-empty');
+      const btnRtl = document.getElementById('btn-state-rtl');
+
+      const mainView = document.getElementById('main-gifting-view');
+      const emptyView = document.getElementById('empty-state-view');
+      const pdpModal = document.getElementById('pdp-modal');
+      const openModalBtn = document.getElementById('open-sample-modal');
+      const closeModalBtn = document.getElementById('close-modal-btn');
+
+      const buttons = [btnGifting, btnShelf, btnModal, btnEmpty, btnRtl];
+
+      function resetTabs() {
+        buttons.forEach(btn => {
+          if (btn) {
+            btn.className = 'px-2.5 py-1 rounded text-surface-container-highest hover:text-white transition-all text-xs';
+          }
+        });
+      }
+
+      function setActive(btn) {
+        resetTabs();
+        if (btn) {
+          btn.className = 'px-2.5 py-1 rounded bg-secondary-container text-primary font-bold transition-all text-xs';
+        }
+      }
+
+      if (btnGifting) {
+        btnGifting.addEventListener('click', () => {
+          setActive(btnGifting);
+          mainView.classList.remove('hidden');
+          emptyView.classList.add('hidden');
+          pdpModal.classList.add('hidden');
+          document.body.removeAttribute('dir');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      if (btnShelf) {
+        btnShelf.addEventListener('click', () => {
+          setActive(btnShelf);
+          mainView.classList.remove('hidden');
+          emptyView.classList.add('hidden');
+          pdpModal.classList.add('hidden');
+          document.body.removeAttribute('dir');
+          const target = document.getElementById('curated-sets');
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+
+      if (btnModal) {
+        btnModal.addEventListener('click', () => {
+          setActive(btnModal);
+          mainView.classList.remove('hidden');
+          emptyView.classList.add('hidden');
+          pdpModal.classList.remove('hidden');
+          document.body.removeAttribute('dir');
+        });
+      }
+
+      if (btnEmpty) {
+        btnEmpty.addEventListener('click', () => {
+          setActive(btnEmpty);
+          mainView.classList.add('hidden');
+          emptyView.classList.remove('hidden');
+          pdpModal.classList.add('hidden');
+          document.body.removeAttribute('dir');
+        });
+      }
+
+      if (btnRtl) {
+        btnRtl.addEventListener('click', () => {
+          setActive(btnRtl);
+          mainView.classList.remove('hidden');
+          emptyView.classList.add('hidden');
+          pdpModal.classList.add('hidden');
+          document.body.setAttribute('dir', 'rtl');
+        });
+      }
+
+      if (openModalBtn) {
+        openModalBtn.addEventListener('click', () => {
+          pdpModal.classList.remove('hidden');
+        });
+      }
+
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', () => {
+          pdpModal.classList.add('hidden');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg"><div class="max-w-[1380px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-wider text-primary">BY SARA</span><span class="font-label-caps text-label-caps text-secondary uppercase self-end mb-1">Beirut</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">An exquisite synthesis of Levantine botanical opulence, clinical dermatological science, and bespoke beauty rituals.</p><div class="pt-space-sm"><span class="inline-flex items-center gap-space-xs font-label-caps text-label-caps text-secondary px-3 py-1 rounded-full bg-secondary-container/40"><span class="material-symbols-outlined text-sm">verified</span>Maison Provenance Certified</span></div></div><div class="space-y-space-sm"><h4 class="font-title-md text-title-md text-primary font-headline-sm">Flagship Ateliers</h4><div class="text-body-md font-body-md text-on-surface-variant space-y-space-xs"><p class="font-bold text-on-surface">Downtown Beirut Sanctuary</p><p class="">Foch Avenue, Quartier Des Arts</p><p class="">Beirut, Lebanon</p><p class="text-body-sm text-secondary pt-1">Daily Consultations: 10:00 — 20:00</p></div><div class="text-body-md font-body-md text-on-surface-variant space-y-space-xs pt-space-xs"><p class="font-bold text-on-surface">Verdun Beauty Lounge</p><p class="">Dunes Center, Level 2</p></div></div><div class="space-y-space-sm"><h4 class="font-title-md text-title-md text-primary font-headline-sm">Haute Concierge</h4><ul class="space-y-space-xs text-body-md font-body-md text-on-surface-variant"><li class=""><a class="inline-flex items-center gap-space-xs text-primary font-bold hover:text-on-primary-container transition-colors" data-path="whatsapp-concierge" href="#"><span class="material-symbols-outlined text-base">chat</span>WhatsApp Direct Desk</a></li><li class=""><span class="text-body-sm block">Instant Gifting Advice: +961 70 000 000</span></li><li class=""><a class="hover:text-on-surface transition-colors block pt-1" data-path="bespoke-consultations" href="#">Bespoke Skin Consultations</a></li><li class=""><a class="hover:text-on-surface transition-colors block" data-path="shipping-and-hand-delivery" href="#">White-Glove Hand Delivery</a></li><li class=""><a class="hover:text-on-surface transition-colors block" data-path="corporate-gifting" href="#">Corporate &amp; VIP Gifting Suites</a></li></ul></div><div class="space-y-space-md"><h4 class="font-title-md text-title-md text-primary font-headline-sm">The Gazette Privée</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Receive discreet seasonal invitations, bespoke gift curations, and dermatological breakthroughs.</p><div class="flex flex-col gap-space-xs"><div class="flex"><input class="w-full px-3 py-2 bg-surface-container-lowest rounded-l-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Enter your correspondence email..." type="email"><button class="px-4 py-2 bg-primary text-on-primary font-label-md text-label-md rounded-r-lg hover:bg-primary-container hover:text-on-primary-container transition-colors" type="button">Join</button></div><span class="font-label-caps text-[10px] text-outline">Discreet privilege. Never unsolicited dispatch.</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-on-surface-variant"><div class="flex items-center gap-space-lg"><p class="">© 2024 BY SARA Haute Parfumerie &amp; Skincare. All rights reserved.</p></div><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="privacy-charter" href="#">Privacy Charter</a><a class="hover:text-on-surface transition-colors" data-path="client-terms" href="#">Client Terms</a><a class="hover:text-on-surface transition-colors" data-path="authenticity-manifesto" href="#">Authenticity Manifesto</a></div></div></div></footer>
+
+</body></html>
